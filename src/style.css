@@ -11,7 +11,7 @@ header {
     font-family: Arial, sans-serif;
 }
 h1 {
-    font-family: 'Mansalva', sans-serif !important;
+    font-family: 'Mansalva', sans-serif;
 }
 .container {
     max-width: 800px;
@@ -31,7 +31,7 @@ h1 {
     text-align: center;
 }
 .button:hover {
-    box-shadow: 0px 0px 20px #171a1c;
+    box-shadow: 0px 0px 10px #171a1c;
 }
 .button:active {
     background-color: #9d5fb0;
