@@ -5,5 +5,5 @@ header {
     font-family: Arial, sans-serif;
 }
 h1 {
-    font-family: 'Mansalva', sans-serif;
+    font-family: 'Mansalva', sans-serif !important;
 }
