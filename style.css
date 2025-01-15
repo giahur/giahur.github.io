@@ -20,15 +20,15 @@ h1 {
 }
 .button {
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     background-color: #ba71d1;
     color: #faf3f0;
     font-size: 2rem;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.8rem;
     margin: 1.5rem auto;
     display: block;
-    font-family: 'Sniglet', sans-serif;
     text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 .button:hover {
     box-shadow: 0px 0px 10px #171a1c;
