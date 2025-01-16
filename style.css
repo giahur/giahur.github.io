@@ -29,8 +29,7 @@ h1 {
     display: inline-block;
     text-align: center;
     transition: background-color 0.5s, box-shadow 0.5s;
-    max-width: 500px;
-    width: auto;
+    width: 300px;
     text-decoration: none;
 }
 .button:hover {
