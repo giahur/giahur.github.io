@@ -9,6 +9,7 @@ body {
 }
 h1 {
     font-family: 'Mansalva', sans-serif;
+    font-size: 3em;
 }
 .container {
     max-width: 800px;
