@@ -14,6 +14,9 @@ h1 {
     color: #544f60;
     justify-content: center;
 }
+h2 {
+    color: #544f60;
+}
 .container {
     max-width: 800px;
     margin: 2rem auto;
@@ -51,7 +54,7 @@ h1 {
     width: 500px;
 }
 
-/* Nav bar */
+/* Nav bar 
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -84,4 +87,64 @@ nav ul li a.active {
     background-color: #544f60;
     border-radius: 5px;
     box-shadow: 0px 0px 20px #35313c;
+}*/
+
+/* Nav bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #6A6378;
+    padding: 1rem;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* For scrollable content inside the sidebar */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 1rem;
+}
+
+nav ul li a {
+    font-family: 'Mansalva', sans-serif;
+    color: #EBEED8;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+nav ul li a:hover {
+    color: #EBEED8;
+    background-color: #544f60;
+    box-shadow: 0px 0px 10px #35313c;
+}
+
+nav ul li a.active {
+    background-color: #544f60;
+    color: #EBEED8;
+    box-shadow: 0px 0px 10px #35313c;
+}
+
+/* Page Content */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EBEED8;
+    margin: 0;
+    padding-left: 220px; /* Push content to the right to make space for the sidebar */
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
