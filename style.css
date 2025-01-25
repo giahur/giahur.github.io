@@ -4,10 +4,6 @@
 /* Icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #EBEED8;
-}
 h1 {
     font-family: 'Mansalva', sans-serif;
     font-size: 3em;
@@ -20,6 +16,12 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: italic;
+}
+body {
+    font-family: 'Karla', serif;
+    background-color: #EBEED8;
+    margin: 0;
+    padding-left: 220px;
 }
 .container {
     max-width: 800px;
@@ -39,7 +41,6 @@ h2 {
     display: inline-block;
     text-align: center;
     transition: background-color 0.5s, box-shadow 0.5s;
-    width: 100px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -50,48 +51,12 @@ h2 {
 .button:active {
     background-color: #544f60;
 }
-
 .contact {
     background-color: #6A6378;
     font-size: 1.5rem;
     display: block;
     width: 500px;
 }
-
-/* Nav bar 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-
-}
-nav ul li {
-    display: inline-block;
-}
-nav ul li a {
-    font-family: 'Mansalva', sans-serif;
-    color: #544f60;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    transition: background-color 0.5s, box-shadow 0.5s;
-}
-nav ul li a:hover {
-    color: #EBEED8;
-    background-color: #544f60;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px #35313c;
-}
-nav ul li a.active {
-    color: #EBEED8;
-    background-color: #544f60;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px #35313c;
-}*/
 
 /* Nav bar */
 nav {
@@ -103,7 +68,6 @@ nav {
     background-color: #6A6378;
     padding: 1rem;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
-    overflow-y: auto; /* For scrollable content inside the sidebar */
 }
 
 nav ul {
@@ -137,18 +101,4 @@ nav ul li a.active {
     background-color: #544f60;
     color: #EBEED8;
     box-shadow: 0px 0px 10px #35313c;
-}
-
-/* Page Content */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #EBEED8;
-    margin: 0;
-    padding-left: 220px; /* Push content to the right to make space for the sidebar */
-}
-
-.container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
 }
