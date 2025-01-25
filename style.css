@@ -41,7 +41,7 @@ body {
 .container {
     width: 800px;
     margin: 2rem auto;
-    padding: 2rem;
+    padding: 10px 10rem;
 }
 
 /* Project Buttons */
@@ -84,7 +84,7 @@ nav {
     width: 200px;
     background-color: #6A6378;
     padding: 1rem;
-    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px #35313c;
 }
 
 nav ul {
