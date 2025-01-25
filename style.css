@@ -11,6 +11,7 @@ body {
 h1 {
     font-family: 'Mansalva', sans-serif;
     font-size: 3em;
+    color: #544f60;
 }
 .container {
     max-width: 800px;
@@ -64,7 +65,7 @@ nav ul li {
 }
 nav ul li a {
     font-family: 'Mansalva', sans-serif;
-    color: #6A6378;
+    color: #544f60;
     text-decoration: none;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
@@ -73,13 +74,13 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: #EBEED8;
-    background-color: #6A6378;
+    background-color: #544f60;
     border-radius: 5px;
     box-shadow: 0px 0px 20px #35313c;
 }
 nav ul li a.active {
     color: #EBEED8;
-    background-color: #6A6378;
+    background-color: #544f60;
     border-radius: 5px;
     box-shadow: 0px 0px 20px #35313c;
 }
