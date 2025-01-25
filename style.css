@@ -35,6 +35,8 @@ body {
     border-radius: 2rem;
     background-color: #6A6378;
     color: #EBEED8;
+    font-family: 'Karla', serif;
+    font-style: italic;
     font-size: 2rem;
     padding: 0.3rem 0.3rem;
     margin: 1.5rem auto;
