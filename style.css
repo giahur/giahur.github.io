@@ -34,12 +34,11 @@ body {
     font-family: 'Karla', serif;
     background-color: #EBEED8;
     margin: 0;
-    justify-content: left;
 }
 .container {
     width: 800px;
     margin: 2rem auto;
-    padding: 40px;
+    padding: 10px 10rem;
 }
 
 /* Project Buttons */
