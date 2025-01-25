@@ -34,9 +34,6 @@ body {
     font-family: 'Karla', serif;
     background-color: #EBEED8;
     margin: 0;
-    padding-left: 220px;
-    min-width: 600px;
-    box-sizing: border-box;
 }
 .container {
     width: 800px;
