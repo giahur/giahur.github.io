@@ -12,6 +12,7 @@ h1 {
     font-family: 'Mansalva', sans-serif;
     font-size: 3em;
     color: #544f60;
+    justify-content: center;
 }
 .container {
     max-width: 800px;
