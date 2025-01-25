@@ -30,10 +30,12 @@ h1 {
     display: inline-block;
     text-align: center;
     transition: background-color 0.5s, box-shadow 0.5s;
-    width: 200px;
+    width: 100px;
     text-decoration: none;
+    cursor: pointer;
 }
 .button:hover {
+    background-color: #544f60;
     box-shadow: 0px 0px 20px #35313c;
 }
 .button:active {
@@ -47,21 +49,15 @@ h1 {
     width: 500px;
 }
 
-.button:hover {
-    box-shadow: 0px 0px 20px #35313c;
-}
-.button:active {
-    background-color: #544f60;
-}
-
 /* Nav bar */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     gap: 2rem;
+
 }
 nav ul li {
     display: inline-block;
@@ -76,16 +72,14 @@ nav ul li a {
     transition: background-color 0.5s, box-shadow 0.5s;
 }
 nav ul li a:hover {
-    font-family: 'Mansalva', sans-serif;
     color: #EBEED8;
-    background-color: #544f60;
+    background-color: #6A6378;
     border-radius: 5px;
     box-shadow: 0px 0px 20px #35313c;
 }
 nav ul li a.active {
-    font-family: 'Mansalva', sans-serif;
     color: #EBEED8;
-    background-color: #544f60;
+    background-color: #6A6378;
     border-radius: 5px;
     box-shadow: 0px 0px 20px #35313c;
 }
