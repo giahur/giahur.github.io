@@ -29,7 +29,7 @@ h1 {
     display: inline-block;
     text-align: center;
     transition: background-color 0.5s, box-shadow 0.5s;
-    width: 300px;
+    width: 200px;
     text-decoration: none;
 }
 .button:hover {
@@ -40,6 +40,7 @@ h1 {
 }
 
 .contact {
+    background-color: #535366;
     font-size: 1.5rem;
     display: block;
     width: 500px;
