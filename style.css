@@ -6,13 +6,13 @@
 
 h1 {
     font-family: 'Mansalva', sans-serif;
-    font-size: 10em;
+    font-size: 8em;
     color: #544f60;
     justify-content: center;
 }
 h2 {
     font-family: 'Mansalva', sans-serif;
-    font-size: 5em;
+    font-size: 3em;
     color: #544f60;
     justify-content: center;
 }
@@ -35,7 +35,7 @@ body {
     padding-left: 220px;
 }
 .container {
-    max-width: 800px;
+    width: 800px;
     margin: 2rem auto;
     padding: 10 10rem;
 }
