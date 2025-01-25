@@ -6,17 +6,23 @@
 
 h1 {
     font-family: 'Mansalva', sans-serif;
-    font-size: 3em;
+    font-size: 10em;
     color: #544f60;
     justify-content: center;
 }
 h2 {
+    font-family: 'Mansalva', sans-serif;
+    font-size: 5em;
+    color: #544f60;
+    justify-content: center;
+}
+h3 {
     color: #544f60;
     font-family: 'Karla', serif;
     font-weight: 800;
     font-style: italic;
 }
-h3 {
+h4 {
     color: #544f60;
     font-family: 'Karla', serif;
     font-weight: 500;
