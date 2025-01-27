@@ -18,7 +18,7 @@ h2 {
     font-size: 3em;
     color: #544f60;
     justify-content: center;
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0;
 }
 h3 {
@@ -130,7 +130,7 @@ nav ul li a.active {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-top: auto;
+    margin-top: 2rem;
 }
 .icon-link {
     color: #EBEED8;
