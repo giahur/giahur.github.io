@@ -91,17 +91,17 @@ nav {
     background-color: #6A6378;
     padding: 1rem;
     box-shadow: 0px 0px 10px #35313c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 nav ul li {
-    margin: 0;
+    margin: 1rem;
 }
 nav ul li a {
     font-family: 'Mansalva', sans-serif;
@@ -123,10 +123,15 @@ nav ul li a.active {
     color: #EBEED8;
     box-shadow: 0px 0px 10px #35313c;
 }
+.icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: auto;
+}
 .icon-link {
     color: #EBEED8;
     font-size: 2.5rem;
-    margin: 0 1rem;
     text-decoration: none;
 }
 
