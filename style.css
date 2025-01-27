@@ -8,7 +8,6 @@
 h1 {
     font-family: 'Mansalva', sans-serif;
     font-size: 7em;
-    /*color: #524a63;*/
     color: #648C85;
     justify-content: center;
     margin: 0;
@@ -17,7 +16,7 @@ h1 {
 h2 {
     font-family: 'Mansalva', sans-serif;
     font-size: 3em;
-    color: #524a63;
+    color: #648C85;
     justify-content: center;
     margin: 10px 0 0 0;
     padding: 0;
@@ -61,7 +60,6 @@ img {
 .button {
     border: none;
     border-radius: 2rem;
-    /*background-color: #685e7e;*/
     background-color: #648C85;
     color: #EFE9E7;
     font-family: 'Karla', serif;
