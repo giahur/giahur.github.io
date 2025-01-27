@@ -54,7 +54,7 @@ body {
     color: #EBEED8;
     font-family: 'Karla', serif;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 0.3rem 0.8rem;
     margin: 1.5rem auto;
     display: inline-block;
@@ -103,7 +103,7 @@ nav ul li a {
     font-family: 'Mansalva', sans-serif;
     color: #EBEED8;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 0.5rem 1rem;
     display: block;
     border-radius: 5px;
