@@ -48,9 +48,10 @@ img {
     height: 250px;
 }
 .container {
-    width: 1000px;
+    width: 100%;
+    max-width: 1100px;
     margin: 3rem 3rem 3rem 18rem;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 .project {
     margin: 2rem 0rem 2rem 2rem;
@@ -148,24 +149,33 @@ nav ul li a.active {
     font-size: 2.5rem;
     text-decoration: none;
 }
+.hamburger-menu {
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #EFE9E7;
+}
 
 @media (max-width: 768px) {
-    body {
-        padding-left: 0;
-        padding-top: 4rem;
-    }
-    .container {
-        padding: 1rem;
-    }
-    nav {
+    .hamburger-menu {
+        display: block;
         position: absolute;
-        height: auto;
+        top: 1rem;
+        right: 1rem;
+    }
+    #nav-list {
+        display: none;
         width: 100%;
-        top: 0;
-        left: 0;
+        flex-direction: column;
+        background-color: #685e7e;
         padding: 1rem;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        box-shadow: 0px 0px 10px #3e394c;
+    }
+    #nav-list.active {
         display: flex;
-        flex-direction: row;
     }
     nav ul {
         display: flex;
