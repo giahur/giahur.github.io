@@ -41,16 +41,15 @@ h4 {
 }
 body {
     font-family: 'Karla', serif;
-    background-color: #f7f4f3;
+    background-color: #EFE9E7;
     margin: 0;
 }
 img {
     height: 200px;
 }
 .container {
-    width: 1000px;
-    margin: 2rem auto;
-    padding: 10px 10rem;
+    width: 1200px;
+    margin: 4rem;
 }
 .project {
     margin: 2rem;
@@ -61,7 +60,7 @@ img {
     border: none;
     border-radius: 2rem;
     background-color: #685e7e;
-    color: #f7f4f3;
+    color: #EFE9E7;
     font-family: 'Karla', serif;
     font-style: italic;
     font-size: 2rem;
@@ -91,7 +90,7 @@ img {
 .logo {
     font-family: 'Zeyada', serif;
     font-size: 5rem;
-    color: #f7f4f3;
+    color: #EFE9E7;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -118,7 +117,7 @@ nav ul li {
 }
 nav ul li a {
     font-family: 'Mansalva', sans-serif;
-    color: #f7f4f3;
+    color: #EFE9E7;
     text-decoration: none;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
@@ -127,13 +126,13 @@ nav ul li a {
     transition: background-color 0.5s, box-shadow 0.5s;
 }
 nav ul li a:hover {
-    color: #f7f4f3;
+    color: #EFE9E7;
     background-color: #524a63;
     box-shadow: 0px 0px 10px #3e394c;
 }
 nav ul li a.active {
     background-color: #524a63;
-    color: #f7f4f3;
+    color: #EFE9E7;
     box-shadow: 0px 0px 10px #3e394c;
 }
 .icons {
@@ -144,7 +143,7 @@ nav ul li a.active {
     margin-bottom: 1rem;
 }
 .icon-link {
-    color: #f7f4f3;
+    color: #EFE9E7;
     font-size: 2.5rem;
     text-decoration: none;
 }
