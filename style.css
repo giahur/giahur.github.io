@@ -19,14 +19,14 @@ h2 {
 h3 {
     color: #544f60;
     font-family: 'Karla', serif;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 800;
     font-style: italic;
 }
 h4 {
     color: #544f60;
     font-family: 'Karla', serif;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 500;
     font-style: italic;
 }
@@ -98,7 +98,7 @@ nav ul li a {
     font-family: 'Mansalva', sans-serif;
     color: #EBEED8;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0.5rem 1rem;
     display: block;
     border-radius: 5px;
