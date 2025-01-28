@@ -119,7 +119,7 @@ nav ul {
     gap: 1rem;
 }
 nav ul li {
-    margin: 1rem;
+    margin: 0.5rem 0;
 }
 nav ul li a {
     font-family: 'Mansalva', sans-serif;
@@ -161,11 +161,14 @@ nav ul li a.active {
 }
 
 @media screen and (max-width: 768px) {
+    .icons {
+        display: none;
+    }
     .hamburger-menu {
         display: block;
         position: absolute;
         top: 1rem;
-        right: 1rem;
+        left: 1rem;
     }
     ul#nav-bar {
         display: none;
