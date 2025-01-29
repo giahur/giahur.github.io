@@ -48,11 +48,12 @@ body {
     width: 35%;
 }
 .pt {
-    width: 15%;
+    width: 20%;
 }
 .container {
     width: 70%;
     max-width: 1100px;
+    min-width: 500px;
     margin: 3rem 3rem 3rem 18rem;
     padding: 0 1rem;
 }
