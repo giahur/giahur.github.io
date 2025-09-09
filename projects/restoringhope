@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>restoring hope</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">GH</div>
+            <ul>
+                <li><a href="/index1">Home</a></li>
+                <li><a href="./education">Education</a></li>
+                <li><a href="./projects" class="active">Projects</a></li>
+                <li><a href="./hobbies">Hobbies</a></li>
+                <li><a href="./contact">Contact Me</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/giahur" target="_blank" class="icon-link"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Restoring Hope (Class Choice Award)</h2>
+        <div class="project">
+            <a href="https://cwru-ecse390.itch.io/restoring-hope-f2024-team-3" 
+                class="button"><i class="fa-solid fa-gamepad"></i>  Play</a>
+            <h4> 2-D narrative-driven pixel puzzle game using Unity and C# </h4>
+            <h4> Play as a pretty princess fixing up her castle with her magic wand. The more she fixes, the more... things go wrong?
+            Explore her castle and investigate strange discrepancies to learn the truth behind the sparkles and magic. </h4>
+            <h4> This project was the work of a team of 9 students, including developers, artists, and sound designers. 
+            We worked on this project for 15 weeks with weekly sprints. 
+            I led puzzle development, conceptualizing and implementing many of the game's interactive puzzles. </h4>
+            <img class="ls" src="./assets/RH_CastleBR.png" title="Maeve's bedroom (castle variant)">
+            <img class="ls" src="./assets/RH_HouseBR.png" title="Maeve's bedroom (house variant)">
+            <img class="ls" src="./assets/RH_Chest.png" title="Chest puzzle">
+            <img class="ls" src="./assets/RH_Diary.png" title="Maeve's diary (hint to chest puzzle)">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>artifacts of the past</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">GH</div>
+            <ul>
+                <li><a href="/index1">Home</a></li>
+                <li><a href="./education">Education</a></li>
+                <li><a href="./projects" class="active">Projects</a></li>
+                <li><a href="./hobbies">Hobbies</a></li>
+                <li><a href="./contact">Contact Me</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/giahur" target="_blank" class="icon-link"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Artifacts of the Past</h2>
+        <div class="project">
+            <a href="https://ecse-csds290.itch.io/artifacts-of-the-past-2023-team-7" 
+            class="button"><i class="fa-solid fa-gamepad"></i>  Play</a>
+            <h4> 2D Puzzle Platformer using Unity and C# </h4>
+            <h4> For years you thought you were the last time traveler left. But suddenly, someone starts
+            wreaking havoc in the past and it's up to you to stop them. Switch between the past and present 
+            to avoid obstacles, fight enemies, and solve puzzles to face whoever is responsible.</h4>
+            <h4> I worked on this project with a group of 4 students over the course of 4 weeks. I designed many of the puzzles and crafted the levels.
+            I also implemented assets for characters, enemies, and the environment.</h4>
+            <img class="ls" src="./assets/AP_Past.png" title="Plant a seed in the past to...">
+            <img class="ls" src="./assets/AP_Present.png" title="...grow a tree in the present.">
+            <img class="ls" src="./assets/AP_Bridge.png" title="Cut down the tree to cross the gap.">
+            <img class="ls" src="./assets/AP_Boss.png" title="Face the creature responsible for causing chaos in your world.">
+        </div>
+    </div>
+</body>
+</html>

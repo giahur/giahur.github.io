@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>to do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">GH</div>
+            <ul>
+                <li><a href="/index1">Home</a></li>
+                <li><a href="./education">Education</a></li>
+                <li><a href="./projects" class="active">Projects</a></li>
+                <li><a href="./hobbies">Hobbies</a></li>
+                <li><a href="./contact">Contact Me</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/giahur" target="_blank" class="icon-link"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>To-Do List</h2>
+        <div class="project">
+            <a href="https://stackblitz-starters-dhc26x.stackblitz.io/" 
+            class="button"><i class="fa-solid fa-arrow-pointer"></i>  Check it out</a>
+            <h4> Dynamic system for users to add, update, and delete tasks and manage deadlines with priority settings. Made using React, JavaScript, CSS, and TypeScript </h4>
+            <h4> Integrated Material UI for a responsive UI, and toastr to integrate form validation and error handling </h4>
+            <img class="ls" src="./assets/TDL_Home.png" title="Home page">
+            <img class="ls" src="./assets/TDL_Add.png" title="Add a task">
+            <img class="ls" src="./assets/TDL_Added.png" title="Task added">
+            <img class="ls" src="./assets/TDL_Edit.png" title="Edit a task">
+            <img class="ls" src="./assets/TDL_deletetoastr.png" title="Delete toastr">
+            <img class="ls" src="./assets/TDL_updatetoastr.png" title="Update toastr">
+        </div>
+    </div>
+</body>
+</html>

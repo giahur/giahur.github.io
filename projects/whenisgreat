@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>when is great</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">GH</div>
+            <ul>
+                <li><a href="/index1">Home</a></li>
+                <li><a href="./education">Education</a></li>
+                <li><a href="./projects" class="active">Projects</a></li>
+                <li><a href="./hobbies">Hobbies</a></li>
+                <li><a href="./contact">Contact Me</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/giahur" target="_blank" class="icon-link"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>WhenIsGreat</h2>
+        <div class="project">
+            <h4> Browser Application designed to streamline scheduling group meetings. Built with React, Spring Boot, MySQL, Java, CSS, HTML, JavaScript, and OAuth authentication </h4>
+            <h4> This project was completed with a group of 4 students in 12 weeks. The primary objective of this project was to develop a user-friendly and visually appealing application
+            that finds common availabilities with Google Calendar integration. Users can log in with their Google account and
+            create, edit, view and share events. </h4>
+            <img class="ls" src="./assets/WIG_LogIn.png" title="Log in page">
+            <img class="ls" src="./assets/WIG_Events.png" title="Events synced with Google Calendar">
+            <img class="ls" src="./assets/WIG_Home.png" title="Home page">
+            <img class="ls" src="./assets/WIG_TeamEvents.png" title="Events from all team members">
+        </div>
+    </div>
+</body>
+</html>
