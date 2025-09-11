@@ -153,7 +153,7 @@ nav ul li a.active {
 }
 
 /* Responsive Design */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     nav {
         position: fixed;
         top: 0;
