@@ -152,20 +152,41 @@ nav ul li a.active {
 /* Responsive Design */
 @media (max-width: 900px) {
     nav {
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         height: auto;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding: 0.5rem 1rem;
     }
     nav ul {
-        display: flex;
-        gap: 1rem;
+        display: none;
+        flex-direction: column;
+        background-color: #685e7e;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
     }
-    .container {
-        width: 90%;
-        margin: 2rem auto;
+    nav ul.show {
+        display: flex; 
+    }
+    nav ul li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+    .menu-toggle {
+        font-size: 2rem;
+        color: #EFE9E7;
+        cursor: pointer;
+        display: block;
+    }
+    .icons {
+        display: none; /* hide bottom icons on mobile */
     }
 }
 
@@ -180,10 +201,6 @@ nav ul li a.active {
         font-size: 1.5em;
     }
     p {
-        font-size: 1em;
-    }
-    .ls, .pt {
-        width: 100%;
-        max-width: 100%;
+        font-size: 1rem;
     }
 }

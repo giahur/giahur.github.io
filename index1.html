@@ -12,6 +12,7 @@
     <header>
         <nav>
             <div class="logo">GH</div>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul>
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="./education">Education</a></li>
@@ -35,5 +36,10 @@
         <a href="./assets/GiaHur_Resume.pdf" download="Gia Hur Resume" class="button">
             <i class="fa-solid fa-arrow-down"></i>  Download CV</a>
     </div>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

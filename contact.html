@@ -12,6 +12,7 @@
     <header>
         <nav>
             <div class="logo">GH</div>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul>
                 <li><a href="/index1">Home</a></li>
                 <li><a href="./education">Education</a></li>
@@ -37,5 +38,10 @@
         <a href="tel:+1 2012458656" 
                 class="button contact"><i class="fa-solid fa-phone"></i>    +1 201-245-8656</a>
     </div>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

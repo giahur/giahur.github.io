@@ -12,6 +12,7 @@
     <header>
         <nav>
             <div class="logo">GH</div>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul>
                 <li><a href="/index1">Home</a></li>
                 <li><a href="./education">Education</a></li>
@@ -111,5 +112,10 @@
             <img class="ls" src="./assets/TDL_updatetoastr.png" title="Update toastr">
         </div>
     </div>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("show");
+        });
+    </script>
 </body>
 </html>
