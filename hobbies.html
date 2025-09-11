@@ -63,9 +63,16 @@
         </div> 
     </div>
     <script>
-        document.querySelector(".menu-toggle").addEventListener("click", function() {
-            document.querySelector("nav ul").classList.toggle("show");
-        });
-    </script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+    const menu = nav.querySelector("ul");
+
+    toggle.addEventListener("click", function () {
+        menu.classList.toggle("show");
+    });
+});
+</script>
+
 </body>
 </html>
