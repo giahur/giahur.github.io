@@ -111,6 +111,8 @@ nav {
 .container {
     margin-left: 240px;
     padding: 20px;
+    max-width: calc(100% - 260px);
+    box-sizing: border-box;
 }
 nav ul {
     list-style: none;
@@ -164,16 +166,12 @@ nav .icons {
 /* Responsive Design */
 @media (max-width: 600px) {
     nav {
-        position: fixed;
-        top: 0;
-        left: 0;
         width: 100%;
         height: auto;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 0.5rem 1rem;
-        z-index: 1000;
     }
     .logo {
         font-size: 2.5rem;
@@ -213,6 +211,7 @@ nav .icons {
         margin: 7rem auto 2rem auto;
         width: 90%;
         max-width: 1100px;
+        margin-left: 0;
     }
 }
 
