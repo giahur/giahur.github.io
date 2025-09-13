@@ -13,7 +13,7 @@ body {
 }
 h1 {
     font-family: 'Mansalva', sans-serif;
-    font-size: 7em;
+    font-size: clamp(3rem, 6vw, 7rem); /*7em;*/
     color: #648C85;
     margin: 0 0 0.5rem;
 }
@@ -25,13 +25,13 @@ h2 {
 }
 h3 {
     font-family: 'Karla', serif;
-    font-size: 2em;
+    font-size: clamp(1.5rem, 2vw, 2.5rem); /*2em;*/
     font-weight: 800;
     font-style: italic;
     margin: 0 0 0.5rem;
 }
 p {
-    font-size: 1.3em;
+    font-size: clamp(1rem, 1.2vw, 1.3rem); /*1.3em;*/
     font-weight: 500;
     font-style: italic;
     margin: 0 0 1rem;
@@ -58,8 +58,8 @@ p {
     color: #EFE9E7;
     font-family: 'Karla', serif;
     font-style: italic;
-    font-size: clamp(1rem, 0.8vw + 0.5rem, 1.5rem); /*1.3rem;*/
-    padding: 0.5rem 1.5rem;
+    font-size: clamp(1rem, 1.2vw, 1.5rem); /*1.3rem;*/
+    padding: clamp(0.4rem, 0.8vw, 0.8rem) clamp(1rem, 1.5vw, 2rem); /*0.5rem 1.5rem;*/
     margin: 1rem 0.5rem;
     display: inline-block;
     text-align: center;
@@ -83,7 +83,7 @@ p {
 /* Nav bar */
 .logo {
     font-family: 'Zeyada', serif;
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 4vw, 5rem); /*4rem;*/
     color: #648C85;
     text-align: center;
     margin-bottom: 1rem;
@@ -125,7 +125,7 @@ nav ul li a {
     font-family: 'Mansalva', sans-serif;
     color: #EFE9E7;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.5vw, 1.8rem); /*1.5rem;*/
     padding: 0.5rem 1rem;
     display: block;
     border-radius: 5px;
@@ -142,10 +142,11 @@ nav .icons {
     gap: 15px;
     margin-top: auto;
     padding-top: 20px;
+    align-items: center;
 }
 .icon-link {
     color: #EFE9E7;
-    font-size: 2rem;
+    font-size: font-size: clamp(1.5rem, 2vw, 2.2rem); /*2rem;*/
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
 }
