@@ -142,6 +142,7 @@ nav .icons {
     gap: 15px;
     margin-top: auto;
     padding-top: 20px;
+    justify-content: center;
 }
 .icon-link {
     color: #EFE9E7;
