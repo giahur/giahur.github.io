@@ -39,12 +39,12 @@ p {
 }
 
 /* Layout */
-.container {
+/* .container {
     width: 70%;
     max-width: 1100px;
     margin: 3rem auto;
     padding: 0 1rem;
-}
+} */
 .project {
     margin: 2rem 0;
 }
@@ -204,7 +204,7 @@ nav .icons {
         margin-left: auto;
         flex: 0 0 auto;
     }
-    .icons {
+    nav .icons {
         display: none; 
     }
     .container {
