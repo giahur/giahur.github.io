@@ -102,7 +102,7 @@ nav {
     box-sizing: border-box;
 }
 .container {
-    margin-left: clamp(200px, 18vw, 300px); /*240px;*/
+    margin-left: clamp(270px, 15vw, 300px); /*240px;*/
     padding: 2vw; /*20px;*/
     max-width: calc(100% - 260px);
     box-sizing: border-box;
