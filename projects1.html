@@ -33,22 +33,41 @@
             <div class="project-info">
                 <h3>Project 2</h3>
                 <p>Short description</p>
-            </div>
-        </a>
+
+                <div class="tech-stack">
+                    <span>Unity</span>
+                    <span>C#</span>
+                </div>
+
+                <div class="project-details">
+                    <div>
+                        <span>Role:</span>
+                        <strong> Programmer</strong>
+                    </div>
+                    <div>
+                        <span>Team Size:</span>
+                        <strong># people</strong>
+                    </div>
+                    <div>
+                        <span>Release:</span>
+                        <strong></strong>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
-</div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const toggle = document.querySelector(".menu-toggle");
-        const nav = document.querySelector("nav");
-        const menu = nav.querySelector("ul");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+            const menu = nav.querySelector("ul");
 
-        toggle.addEventListener("click", function () {
-            menu.classList.toggle("show");
+            toggle.addEventListener("click", function () {
+                menu.classList.toggle("show");
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
 </html>
