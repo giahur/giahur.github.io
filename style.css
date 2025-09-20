@@ -170,19 +170,19 @@ nav .icons {
 .project-card {
     display: flex;
     flex-direction: column;
-    background: #fff;
+    background: #4E5361;
     border-radius: 1rem;
     overflow: hidden;
     text-decoration: none;
     color: inherit;
     max-width: 50vw;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px #3E394C;
     transition: transform 0.2s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 18px #3E394C;
 }
 
 .project-card img {
@@ -243,7 +243,7 @@ nav .icons {
 }
 
 .project-details strong {
-    color: #50fa7b;
+    color: #648C85;
     font-weight: 600;
 }
 
@@ -271,7 +271,7 @@ nav .icons {
         left: 0;
         width: 100%;
         padding: 1rem 0;
-        box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+        box-shadow: 0px 5px 10px #3E394C;
     }
     nav ul.show {
         display: flex; 
