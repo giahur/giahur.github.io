@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ultimate</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">GH</div>
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/education">Education</a></li>
+                <li><a href="/projects" class="active">Projects</a></li>
+                <li><a href="/hobbies">Hobbies</a></li>
+                <li><a href="/contact">Contact Me</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/giahur" target="_blank" class="icon-link"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Ultimate</h2>
+        <div class="project">
+            <a href="https://stackblitz-starters-9qapsx.stackblitz.io/homepage" 
+            class="button" target="_blank"><i class="fa-solid fa-gamepad"></i>  Play</a>
+            <h4> Website to play Ultimate Tic-Tac-Toe with a friend! Made using React, JavaScript, CSS, TypeScript, and HTML </h4>
+            <h4> Ultimate Tic-Tac-Toe is a complex version of the classic game with nine 3x3 boards to create an ultimate large board. 
+            Each of your moves will determine where your opponent can play next. Wins on the smaller boards count as moves on the larger board. 
+            Win the whole game by getting 3-in-a-row on the large board!</h4>
+            <h4> I developed this interactive web application using React framework. I also incorporated React Hooks (state management) to 
+            handle game logic such as tracking and updating game state across multiple boards, handling tie conditions, 
+            and indicating the next allowed moves. </h4>
+            <img class="pt" src="./assets/UT_Move.png" title="Playing in the top-left square on the small board sends your opponent to the top-left on the big board.">
+            <img class="pt"src="./assets/UT_SmallWin.png" title="Wins on the small board count as moves on the big board">
+            <img class="pt"src="./assets/UT_Anywhere.png" title="If sent to a board that's already been won, you can play anywhere">
+            <img class="pt"src="./assets/UT_Win.png" title="Win three small boards in-a-row to win!">
+        </div>
+    </div>
+</body>
+</html>
