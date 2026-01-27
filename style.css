@@ -168,6 +168,8 @@ nav .icons {
 }
 
 .project-card {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
     display: flex;
     flex-direction: column;
     background: #DFD8DA;
@@ -301,9 +303,11 @@ nav .icons {
         max-width: 1100px;
         margin-left: 0;
     }
-}
+    .project-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 
-@media (max-width: 600px) {
     h1 {
         font-size: 3em;
     }
