@@ -170,8 +170,8 @@ nav .icons {
 }
 
 .project-card {
-    flex: 0 0 calc(32% - 2rem);
-    max-width: calc(32% - 2rem);
+    flex: 0 0 calc(33% - 1.3rem);
+    max-width: calc(33% - 1.3rem);
     display: flex;
     flex-direction: column;
     background: #DFD8DA;
