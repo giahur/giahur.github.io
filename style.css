@@ -202,7 +202,7 @@ nav .icons {
 }
 
 .project-info h3 {
-    margin-bottom: 0.25rem;
+    /**margin-bottom: 0.25rem;**/
     font-size: 1.5rem;
     color: #648C85;
     font-family: 'Mansalva', sans-serif;
