@@ -94,7 +94,7 @@ nav {
     top: 0;
     left: 0;
     height: 100vh;
-    width: clamp(270px, 15vw, 300px); /*220px;*/
+    width: clamp(270px, 15vw, 300px);
     background-color: #685e7e;
     padding: 20px 15px;
     display: flex;
@@ -103,11 +103,11 @@ nav {
     box-sizing: border-box;
 }
 .container {
-    margin-left: clamp(270px, 15vw, 300px); /*240px;*/
-    padding: 2vw; /*20px;*/
-    max-width: calc(100% - 260px);
+    margin-left: clamp(270px, 15vw, 300px); 
+    padding: 2vw;
     box-sizing: border-box;
-    width: calc(100% - clamp(200px, 18vw, 300px));
+    /**max-width: calc(100% - 260px);
+    width: calc(100% - clamp(200px, 18vw, 300px));**/
 }
 nav ul {
     list-style: none;
@@ -162,9 +162,11 @@ nav .icons {
 /* Project cards */
 .projects-grid {
     display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem;
+    padding: 2rem 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .project-card {
