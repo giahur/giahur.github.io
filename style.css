@@ -106,8 +106,6 @@ nav {
     margin-left: clamp(270px, 15vw, 300px); 
     padding: 2vw;
     box-sizing: border-box;
-    /**max-width: calc(100% - 260px);
-    width: calc(100% - clamp(200px, 18vw, 300px));**/
 }
 nav ul {
     list-style: none;
@@ -196,9 +194,9 @@ nav .icons {
     box-shadow: 0 6px 18px #3E394C;
 }
 
-.project-card img {
+img {
     width: 100%;
-    height: 150px;
+    height: 300px;
     object-fit: cover;
 }
 
