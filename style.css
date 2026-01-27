@@ -161,7 +161,7 @@ nav .icons {
 
 /* Project cards */
 .projects-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 2rem;
@@ -175,7 +175,6 @@ nav .icons {
     overflow: hidden;
     text-decoration: none;
     color: inherit;
-    max-width: 50vw;
     box-shadow: 0 4px 12px #3E394C;
     transition: transform 0.2s, box-shadow 0.3s;
 }
@@ -192,7 +191,10 @@ nav .icons {
 }
 
 .project-info {
-    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /**padding: 1rem;**/
 }
 
 .project-info h3 {
