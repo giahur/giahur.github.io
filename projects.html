@@ -29,99 +29,293 @@
 
     <div class="container">
         <h2>Projects</h2>
-        <div class="project">
-            <h3> WhenIsGreat </h3>
-            <p> Browser Application designed to streamline scheduling group meetings. Built with React, Spring Boot, MySQL, Java, CSS, HTML, JavaScript, and OAuth authentication </p>
-            <p> This project was completed with a group of 4 students in 12 weeks. The primary objective of this project was to develop a user-friendly and visually appealing application
-            that finds common availabilities with Google Calendar integration. Users can log in with their Google account and
-            create, edit, view and share events. </p>
-            <img class="ls" src="./assets/WIG_LogIn.png" title="Log in page">
-            <img class="ls" src="./assets/WIG_Events.png" title="Events synced with Google Calendar">
-            <img class="ls" src="./assets/WIG_Home.png" title="Home page">
-            <img class="ls" src="./assets/WIG_TeamEvents.png" title="Events from all team members">
-        </div>
+        <h3>Games </h3>
+        <div class="projects-grid games-grid">
+            <a href="./projects/pizzasaucer.html" class="project-card">
+                <img src="../assets/PS_Title.webp">
+                <div class="project-info">
+                    <h3>Pizza Saucer</h3>
+                    <p>2-D pizza-making simulator game</p>
 
-         <div class="project">
-            <h3> Couch Meets Table </h3>
-            <p> Easy-to-use roomate matching platform for CWRU students. Built with Django, MySQL, JavaScript, Python, HTML, and CSS </p>
-            <p> I worked in a team of 4 students, completing this project in 12 weeks. It combines user input and a matching algorithm to 
-            calculate the best roommate options based on habits and preferences. I led 
-            project frontend development, ensuring cohesive and responsive web design. </p>
-        </div>
-        
-        <div class="project">
-            <h3> Ultimate </h3>
-            <a href="https://stackblitz-starters-9qapsx.stackblitz.io/homepage" 
-            class="button"><i class="fa-solid fa-gamepad"></i>  Play</a>
-            <p> Website to play Ultimate Tic-Tac-Toe with a friend! Made using React, JavaScript, CSS, TypeScript, and HTML </p>
-            <p> Ultimate Tic-Tac-Toe is a complex version of the classic game with nine 3x3 boards to create an ultimate large board. 
-            Each of your moves will determine where your opponent can play next. Wins on the smaller boards count as moves on the larger board. 
-            Win the whole game by getting 3-in-a-row on the large board!</p>
-            <p> I developed this interactive web application using React framework. I also incorporated React Hooks (state management) to 
-            handle game logic such as tracking and updating game state across multiple boards, handling tie conditions, 
-            and indicating the next allowed moves. </p>
-            <img class="pt" src="./assets/UT_Move.png" title="Playing in the top-left square on the small board sends your opponent to the top-left on the big board.">
-            <img class="pt"src="./assets/UT_SmallWin.png" title="Wins on the small board count as moves on the big board">
-            <img class="pt"src="./assets/UT_Anywhere.png" title="If sent to a board that's already been won, you can play anywhere">
-            <img class="pt"src="./assets/UT_Win.png" title="Win three small boards in-a-row to win!">
-        </div>
+                    <div class="tech-stack">
+                        <span>Unity</span>
+                        <span>C#</span>
+                    </div>
 
-        <div class="project">
-            <h3> To-Do List </h3>
-            <a href="https://stackblitz-starters-dhc26x.stackblitz.io/" 
-            class="button"><i class="fa-solid fa-arrow-pointer"></i>  Check it out</a>
-            <p> Dynamic system for users to add, update, and delete tasks and manage deadlines with priority settings. Made using React, JavaScript, CSS, and TypeScript </p>
-            <p> Integrated Material UI for a responsive UI, and toastr to integrate form validation and error handling </p>
-            <img class="ls" src="./assets/TDL_Home.png" title="Home page">
-            <img class="ls" src="./assets/TDL_Add.png" title="Add a task">
-            <img class="ls" src="./assets/TDL_Added.png" title="Task added">
-            <img class="ls" src="./assets/TDL_Edit.png" title="Edit a task">
-            <img class="ls" src="./assets/TDL_deletetoastr.png" title="Delete toastr">
-            <img class="ls" src="./assets/TDL_updatetoastr.png" title="Update toastr">
-        </div>
-        <div class="project">
-            <h3> Restoring Hope (Class Choice Award) </h3>
-            <a href="https://cwru-ecse390.itch.io/restoring-hope-f2024-team-3" 
-                class="button"><i class="fa-solid fa-gamepad"></i>  Play</a>
-            <p> 2-D narrative-driven pixel puzzle game using Unity and C# </p>
-            <p> Play as a pretty princess fixing up her castle with her magic wand. The more she fixes, the more... things go wrong?
-            Explore her castle and investigate strange discrepancies to learn the truth behind the sparkles and magic. </p>
-            <p> This project was the work of a team of 9 students, including developers, artists, and sound designers. 
-            We worked on this project for 15 weeks with weekly sprints. 
-            I led puzzle development, conceptualizing and implementing many of the game's interactive puzzles. </p>
-            <img class="ls" src="./assets/RH_CastleBR.png" title="Maeve's bedroom (castle variant)">
-            <img class="ls" src="./assets/RH_HouseBR.png" title="Maeve's bedroom (house variant)">
-            <img class="ls" src="./assets/RH_Chest.png" title="Chest puzzle">
-            <img class="ls" src="./assets/RH_Diary.png" title="Maeve's diary (hint to chest puzzle)">
-        </div>
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Producer, Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>5 people</strong>
+                        </div>
+                        <div>
+                            <span>Release:</span>
+                            <strong>2025</strong>
+                        </div>
+                    </div>
+                </div>
+            </a>
+    
+            <!--
+            <a href="./projects/areafreakyone.html" class="project-card">
+                <img src="./assets/RH_Diary.png">
+                <div class="project-info">
+                    <h3>Area Freaky One</h3>
+                    <p>Chaotic jam game with rapid-fire microgames</p>
 
-        <div class="project">
-            <h3> Artifacts of the Past </h3>
-            <a href="https://ecse-csds290.itch.io/artifacts-of-the-past-2023-team-7" 
-            class="button"><i class="fa-solid fa-gamepad"></i>  Play</a>
-            <p> 2D Puzzle Platformer using Unity and C# </p>
-            <p> For years you thought you were the last time traveler left. But suddenly, someone starts
-            wreaking havoc in the past and it's up to you to stop them. Switch between the past and present 
-            to avoid obstacles, fight enemies, and solve puzzles to face whoever is responsible.</p>
-            <p> I worked on this project with a group of 4 students over the course of 4 weeks. I designed many of the puzzles and crafted the levels.
-            I also implemented assets for characters, enemies, and the environment.</p>
-            <img class="ls" src="./assets/AP_Past.png" title="Plant a seed in the past to...">
-            <img class="ls" src="./assets/AP_Present.png" title="...grow a tree in the present.">
-            <img class="ls" src="./assets/AP_Bridge.png" title="Cut down the tree to cross the gap.">
-            <img class="ls" src="./assets/AP_Boss.png" title="Face the creature responsible for causing chaos in your world.">
+                    <div class="tech-stack">
+                        <span>Unity</span>
+                        <span>C#</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Developer, Artist</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>11 people</strong>
+                        </div>
+                        <div>
+                            <span>Release:</span>
+                            <strong>2025</strong>
+                        </div>
+                    </div>
+                </div>
+            </a>
+      
+            <a href="./projects/crawdads.html" class="project-card">
+                <img src="./assets/RH_Diary.png">
+                <div class="project-info">
+                    <h3>Crawdads</h3>
+                    <p>Analog dress-up game</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Designer, Artist</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>4 people</strong>
+                        </div>
+                        <div>
+                            <span>Release:</span>
+                            <strong>2025</strong>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        -->
+
+            <a href="./projects/restoringhope.html" class="project-card">
+                <img src="./assets/RH_Diary.webp">
+                <div class="project-info">
+                    <h3>Restoring Hope</h3>
+                    <p>2-D narrative-driven pixel puzzle game</p>
+
+                    <div class="tech-stack">
+                        <span>Unity</span>
+                        <span>C#</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Puzzle Lead, Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>9 people</strong>
+                        </div>
+                        <div>
+                            <span>Release:</span>
+                            <strong>2024</strong>
+                        </div>
+                    </div>
+                </div>
+            </a>
+  <!--
+            <a href="./projects/artifactsofthepast.html" class="project-card">
+                <img src="./assets/RH_Diary.png">
+                <div class="project-info">
+                    <h3>Artifacts of the Past</h3>
+                    <p>2-D puzzle platformer</p>
+
+                    <div class="tech-stack">
+                        <span>Unity</span>
+                        <span>C#</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>4 people</strong>
+                        </div>
+                        <div>
+                            <span>Release:</span>
+                            <strong>2023</strong>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        -->
         </div>
     </div>
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav");
-    const menu = nav.querySelector("ul");
+    <div class="container">
+        <h3>Web Development </h3>
+        <div class="projects-grid web-grid">
+            
+            <a href="./projects/whenisgreat.html" class="project-card">
+                <img src="./assets/WIG_Welcome.webp">
+                <div class="project-info">
+                    <h3>WhenIsGreat</h3>
+                    <p>Scheduling browser application with Google Calendar integration</p>
 
-    toggle.addEventListener("click", function () {
-        menu.classList.toggle("show");
-    });
-});
-</script>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                        <span>Java</span>
+                        <span>CSS</span>
+                        <span>HTML</span>
+                        <span>JavaScript</span>                    
+                    </div>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>4 people</strong>
+                        </div>
+                        <div>
+                            <span>Release:</span>
+                            <strong>2023</strong>
+                        </div>
+                    </div>
+                </div>
+            </a>
+       
+            <!--
+            <a href="./projects/couchmeetstable.html" class="project-card">
+                <img src="./assets/RH_Diary.png">
+                <div class="project-info">
+                    <h3>Couch Meets Table</h3>
+                    <p>Roommate-matching browser application</p>
+
+                    <div class="tech-stack">
+                        <span>Django</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>4 people</strong>
+                        </div>
+                        <div>
+                            <span>Release:</span>
+                            <strong>2025</strong>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            -->
+      
+            <a href="./projects/ultimate.html" class="project-card">
+                <img src="./assets/UT_BigWin.webp">
+                <div class="project-info">
+                    <h3>Ultimate</h3>
+                    <p>Browser application to play Ultimate Tic-Tac-Toe</p>
+
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                        <span>TypeScript</span>
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>1 person</strong>
+                        </div>
+                        <div>
+                            <span>Release:</span>
+                            <strong>2023</strong>
+                        </div>
+                    </div>
+                </div>
+            </a>
+      
+            <a href="./projects/todolist.html" class="project-card">
+                <img src="./assets/TDL_Header.webp">
+                <div class="project-info">
+                    <h3>To-Do List</h3>
+                    <p>Dynamic system for users to add, update, and delete tasks</p>
+
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                        <span>TypeScript</span>
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>1 person</strong>
+                        </div>
+                        <div>
+                            <span>Release:</span>
+                            <strong>2023</strong>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+            const menu = nav.querySelector("ul");
+
+            toggle.addEventListener("click", function () {
+                menu.classList.toggle("show");
+            });
+        });
+    </script>
 
 </body>
 </html>
