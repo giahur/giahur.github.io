@@ -70,7 +70,35 @@
             <img class="ls" src="../assets/WIG/WIG_Home.webp" title="Home page">
             <img class="ls" src="../assets/WIG/WIG_Calendar.webp" title="Events synced with Google Calendar from all team members">
             <img class="ls" src="../assets/WIG/WIG_Delete.webp" title="Delete event confirmation">
-            <img class="ls" src="../assets/WIG/WIG_UIUseCaseDiagram.webp" title="UI and Use Case Diagram">
+
+            <h3>Process</h3>
+            <span>
+                WhenIsGreat was a project developed through a full software engineering lifecycle. Our team began
+                by identifying a common problem: scheduling group meetings. We then found common frustrations with 
+                existing scheduling tools such as lack of Google Calendar integration, poor visual design, and limited
+                functionality for students. We designed a solution, outlining our Software Requirements Specification (SRS) 
+                and creating UI mockups. This included functions such as OAuth login, calendar syncing, availability visualization,
+                and event voting. 
+                <img style="display: block;" src="../assets/WIG/WIG_UIUseCaseDiagram.webp" title="UI and Use Case Diagram">
+            
+                <br />
+                Across three sprints, we followed an iterative development process. We began with core features such as account login, 
+                event creation, and calendar syncing. As the frontend developer, I implemented the user interface using React. I focused on creating an intuitive layout 
+                with reusable components for event creation, calendar views, and voting.
+                <br />
+                One challenge that we faced was integrating Google OAuth and Google Calendar APIs. Continuous synchronization proved
+                to be complex, and introduced security risks. We decided to pivot to a manual "Sync with Google Calendar" button to 
+                allow users to control when their data was shared, while still providing the core functionality of our platform. This
+                additionally reduced API calls and simplified debugging.
+                <br />
+                Ultimately, this project strengthened my experience in building scalable frontends 
+                that communicate with secured APIs, designing responsive layouts, and collaborating across frontend-backend.
+            </span>
+            <div>
+                <img class="ls" src="../assets/WIG/WIG_ArchOverview.webp" title="Architecture overview diagram">
+                <img class="ls" src="../assets/WIG/WIG_DesignPackageOverview.webp" title="Overview of design packages">
+                <img class="ls" src="../assets/WIG/WIG_FeaturesDiagram.webp" title="Features diagram">
+            </div>
         </div>
     </div>
 </body>
