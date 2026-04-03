@@ -31,8 +31,9 @@ h3 {
     margin: 0 0 0.5rem;
 }
 h4 {
-    margin: 0 0 0.5 0rem;
+    margin-bottom: 0.5rem;
 }
+
 p {
     font-size: clamp(1.3rem, 1vw, 1.5rem);
     font-weight: 300;
@@ -169,7 +170,6 @@ nav .icons {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem 0;
     width: 100%;
     box-sizing: border-box;
 }
@@ -269,6 +269,19 @@ nav .icons {
 .project-details strong {
     color: #648C85;
     font-weight: 600;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    background: #DFD8DA;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.3s;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 /* Responsive Design */
