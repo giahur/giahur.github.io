@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>shadow magic</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">GH</div>
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/education">Education</a></li>
+                <li><a href="/projects" class="active">Projects</a></li>
+                <li><a href="/hobbies">Hobbies</a></li>
+                <li><a href="/contact">Contact Me</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/giahur" target="_blank" class="icon-link"><i
+                        class="fa-brands fa-square-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <img src="../assets/SM/SM_Header.webp">
+        <h2>Ursa Magus</h2>
+        <div class="project">
+            <p>Turn-based stealth puzzle game.</p>
+            <div class="tech-stack">
+                <span>Unity</span>
+                <span>C#</span>
+            </div>
+            <div class="project-details">
+                <div>
+                    <span>Role:</span>
+                    <strong>Designer, Developer</strong>
+                </div>
+                <div>
+                    <span>Team Size:</span>
+                    <strong>5 people</strong>
+                </div>
+                <div>
+                    <span>Duration:</span>
+                    <strong>4 weeks</strong>
+                </div>
+            </div>
+            <a href="https://giahur.itch.io/ursa-magus" class="button" target="_blank"><i
+                    class="fa-solid fa-gamepad"></i> Play</a>
+            <p> Wield the power of light to cast dynamic shadows from iconic stage props. Playing cards form solid 
+                platforms, while rabbits, doves, and balloon dogs act as enemies. Combine precise platforming with
+                light and shadow manipulation to nail tricky jumps and avoid hazards.</p>
+            <h3>Responsibilities</h3>
+            <p>Designer</p>
+            <ul>
+                <li>Designed 8 of the game's 11 levels, each a puzzle introducing a specific mechanic.</li>
+                <li>Conceived and designed the game's items and abilities, including the Cosmic Shroud (invisibility for one turn) and Honey Jar (two movements in one turn).</li>
+            </ul>
+            <p>Developer</p>
+            <ul>
+                <li>Programmed the Honey and Cosmic Shroud functionality.</li>
+                <li>Built and hooked up UI screens, including the pause menu, level select screen, and lose screen.</li>
+                <li>Integrated updated sprites and refactored code to include directional logic.</li>
+                <li>Updated cloud sprite placement logic.</li>
+                <li>Updated and debugged the Bear's action turn flow.</li>
+            </ul>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dwwXvEhX58o?si=-GSPjqfN0EVu0GEH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            <h3>Process</h3>
+            <span>
+                Shadow Magic was developed over a 3-week sprint. The team was tasked with creating a platformer that had a "unique character." <br/>
+                Very early on, we decided to center the game around the concept of light and shadow manipulation, which led to the idea of a magician 
+                trapped in a shadow realm. One of our earliest iterations of the light mechanic was to have the player control the spotlight to form a 
+                flag shadow that served as a checkpoint.
+            </span>
+            <div>
+                <img class="ls" src="../assets/SM/SM_LightDiagram.webp" title="Light mechanic concepts">
+                <img class="ls" src="../assets/SM/SM_ShadowDiagram.webp" title="Light mechanic concepts">
+                <img class="ls" src="../assets/SM/SM_Flag.webp" title="Moving the light to form the flag">
+            </div>
+                We took inspiration from other shadow-based puzzle games such as Shady Part of Me and Contrast, as well as classic platformers like Super Mario Bros.
+                We also researched paper theater, particularly Chinese shadow theater.
+            </span>
+            <div>
+                <img class="ls" src="../assets/SM/SM_ShadyPartOfMe.webp" title="Shady Part of Me">
+                <img class="ls" src="../assets/SM/SM_Contrast.webp" title="Contrast">
+                <img class="ls" src="../assets/SM/SM_Mario.webp" title="Super Mario Bros.">
+                <img class="ls" src="../assets/SM/SM_Moodboard.webp" title="Visual Moodboard">
+            </div>
+            <span>
+                The team began by establishing a core gameplay loop and defining the mechanics of light and shadow manipulation. We iterated on level design and enemy behavior
+                based on playtest feedback. From the first playtest, players felt the light mechanic and controls were intuitive and added to their
+                experience. However, they felt the level progression increased in difficulty too quickly. For our second playtest, we changed the level
+                progression and saw the average difficulty ratings drop from a 6.7 to a 5.4. This indicated to us that the game was challenging enough to be 
+                difficult, but not frustratingly so. 
+            </span>
+            <div>
+                <img style="display: block;" src="../assets/SM/SM_Act1.webp" title="Act 1">
+                <img style="display: block;" src="../assets/SM/SM_Act2.webp" title="Act 2">
+                <img style="display: block;" src="../assets/SM/SM_Act3.webp" title="Act 3">
+                <img style="display: block;" src="../assets/SM/SM_Act4.webp" title="Act 4">
+            </div>
+            <span>
+                Lastly, we designed and developed several different types of enemies and hazards. Each served a distinct purpose to adapt player gameplay. 
+                For example, the candles were designed to be a hazard that, at first, could be easily avoided, but later required the player
+                to move the light while jumping to avoid. On the other hand, the doves required the player to time their jumps and movements.
+                more aggressive and require more precise movement to avoid. We also implemented controller support.
+            </span>
+            <div>
+                <img class="ls" src="../assets/SM/SM_Enemies.webp" title="Enemy mechanics">
+                <img class="ls" src="../assets/SM/SM_Hazards.webp" title="Hazard mechanics">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
