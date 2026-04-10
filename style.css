@@ -111,6 +111,16 @@ nav {
     padding: 2vw;
     box-sizing: border-box;
 }
+.row {
+    display: flex;
+}
+
+.left {
+    flex: 75%;
+}
+.right {
+    flex: 25%;
+}
 img {
     width: 100%;
     object-fit: cover;
