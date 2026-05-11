@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>shadow magic</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">GH</div>
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/projects" class="active">Projects</a></li>
+                <li><a href="/education">Education</a></li>
+                <li><a href="/hobbies">Hobbies</a></li>
+                <li><a href="/contact">Contact Me</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/giahur" target="_blank" class="icon-link"><i
+                        class="fa-brands fa-square-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <img src="../assets/SM/SM_Header.webp">
+        <h2>Ursa Magus</h2>
+        <div class="project">
+            <p>Turn-based stealth puzzle prototype.</p>
+            <div class="tech-stack">
+                <span>Unity</span>
+                <span>C#</span>
+            </div>
+            <div class="project-details">
+                <div>
+                    <span>Role:</span>
+                    <strong>Designer, Developer</strong>
+                </div>
+                <div>
+                    <span>Team Size:</span>
+                    <strong>5 people</strong>
+                </div>
+                <div>
+                    <span>Duration:</span>
+                    <strong>4 weeks</strong>
+                </div>
+            </div>
+            <a href="https://giahur.itch.io/ursa-magus" class="button" target="_blank"><i
+                    class="fa-solid fa-gamepad"></i> Play</a>
+            <p> Play as two characters, a Witch and her Bear familiar, to navigate environments while avoiding enemies.
+                Use the Witch's spells to manipulate the environment and the Bear's strength to incapacitate enemies and
+                push obstacles. Work together to reach the exit!
+            </p>
+            <h3>Responsibilities</h3>
+            <p>Designer</p>
+            <ul>
+                <li>Designed 8 of the game's 11 levels, each a puzzle introducing a specific mechanic.</li>
+                <li>Conceived and designed the game's items and abilities, including the Cosmic Shroud (invisibility for one turn) and Honey Jar (two movements in one turn).</li>
+            </ul>
+            <p>Developer</p>
+            <ul>
+                <li>Programmed the Honey and Cosmic Shroud functionality.</li>
+                <li>Built and hooked up UI screens, including the pause menu, level select screen, and lose screen.</li>
+                <li>Resolved UI issues across development, such as inventory stretching, button hierarchy, and inconsistencies in phases.</li>
+                <li>Integrated updated sprites and refactored code to include directional logic.</li>
+                <li>Updated cloud sprite placement logic.</li>
+                <li>Updated and debugged the Bear's action turn flow.</li>
+                <li>Implemented the enemy hover interaction to display sightlines.</li>
+            </ul>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dwwXvEhX58o?si=-GSPjqfN0EVu0GEH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            <h3>Process</h3>
+            <span>
+                Ursa Magus was built in Unity 6 over a period of four weeks. Each level functions as a self-contained puzzle,
+                introducing mechanics incrementally. Abilities and items each have a dedicated tutorial level to introduce players to the different mechanics. 
+            </span>
+            <div>
+                <img class="ls" src="../assets/SM/SM_LightDiagram.webp" title="Light mechanic concepts">
+                <img class="ls" src="../assets/SM/SM_ShadowDiagram.webp" title="Light mechanic concepts">
+                <img class="ls" src="../assets/SM/SM_Flag.webp" title="Moving the light to form the flag">
+            </div>
+                In week 1, we set up the basic grid system, with players controlling the Witch and Bear in a simple level with one enemy.
+                After the first playtest, we received valuable feedback that players had a lot of confusion around the tile movement,
+                phase structure, and enemy sightlines. We identified that tutorials would be a necessary next step to onboard players. <br />
+                We also asked players for their insights on future character ability design, and found that they aligned with the team's plans.
+                This indicated to us that the theming and styling of the game matched player expectations.
+            </span>
+            <div>
+                <img class="ls" src="../assets/SM/SM_ShadyPartOfMe.webp" title="Shady Part of Me">
+                <img class="ls" src="../assets/SM/SM_Contrast.webp" title="Contrast">
+                <img class="ls" src="../assets/SM/SM_Mario.webp" title="Super Mario Bros.">
+                <img class="ls" src="../assets/SM/SM_Moodboard.webp" title="Visual Moodboard">
+            </div>
+            <span>
+                In week 2, playtesters were more familiar with the turn-based game structure and were able to give more feedback on 
+                the level design. Levels were often too open, allowing players to reach the exit without using the intended ability
+                or item. Some levels were too reliant on either the Witch or Bear, going against the cooperative puzzle-solving aspect of the game.
+                Lastly, players were introduced to the "Bear Hug" ability first, which incapacitates enemies. Because of this, players
+                believed that all enemies had to be defeated to beat the levels, discouraging them from using other abilities or items. <br />
+                I redesigned levels based on this feedback. As a team, we decided on the order in which we wanted to introduce abilities 
+                and spells. I then reworked the levels so that players were forced to use a given ability or item to beat a level. This
+                often meant blocking the enemy from the Bear's reach, or trapping the player with the enemy.
+            </span>
+            <div>
+                <img style="display: block;" src="../assets/SM/SM_Act1.webp" title="Act 1">
+                <img style="display: block;" src="../assets/SM/SM_Act2.webp" title="Act 2">
+                <img style="display: block;" src="../assets/SM/SM_Act3.webp" title="Act 3">
+                <img style="display: block;" src="../assets/SM/SM_Act4.webp" title="Act 4">
+            </div>
+            <span>
+                In week 3, we implemented our cloud ability, which allows players to clear gaps in the level, and our tutorial system.
+                Playtesters responded very positively to the new onboarding through tutorials and clearer level design. Players began
+                using their spells and items to beat the levels in clever ways, as opposed to defaulting to any single one. 
+            </span>
+            <div>
+                <img class="ls" src="../assets/SM/SM_Enemies.webp" title="Enemy mechanics">
+                <img class="ls" src="../assets/SM/SM_Hazards.webp" title="Hazard mechanics">
+            </div>
+            <span>
+                In our final sprint, we focused on bugs and implementing updated assets. I handled inconsistencies with the Bear's abilities, 
+                tilemap colors, and layer ordering. 
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
