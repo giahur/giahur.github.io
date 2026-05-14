@@ -35,6 +35,7 @@
                 <span>Unreal Engine 5</span>
                 <span>C#</span>
                 <span>Blueprints</span>
+                <span>GAS</span>
             </div>
             <div class="project-details">
                 <div>
@@ -56,42 +57,48 @@
                     class="fa-solid fa-gamepad"></i> Play</a>
             -->
 
-            <p> Play as two characters, a Witch and her Bear familiar, to navigate environments while avoiding enemies.
-                Use the Witch's spells to manipulate the environment and the Bear's strength to incapacitate enemies and
-                push obstacles. Work together to reach the exit!
+            <p>Play as a divine soldier. Armed with six spells themed around flesh and technology, kill enemies to harvest enhancements.
             </p>
             <h3>Responsibilities</h3>
-            <p>Designer</p>
+            <p>Programmer</p>
             <ul>
-                <li>Designed 8 of the game's 11 levels, each a puzzle introducing a specific mechanic.</li>
-                <li>Conceived and designed the game's items and abilities, including the Cosmic Shroud (invisibility for one turn) and Honey Jar (two movements in one turn).</li>
-            </ul>
-            <p>Developer</p>
-            <ul>
-                <li>Programmed the Honey and Cosmic Shroud functionality.</li>
-                <li>Built and hooked up UI screens, including the pause menu, level select screen, and lose screen.</li>
-                <li>Resolved UI issues across development, such as inventory stretching, button hierarchy, and inconsistencies in phases.</li>
-                <li>Integrated updated sprites and refactored code to include directional logic.</li>
-                <li>Updated cloud sprite placement logic.</li>
-                <li>Updated and debugged the Bear's action turn flow.</li>
-                <li>Implemented the enemy hover interaction to display sightlines.</li>
+                <li>Worked with three other developers on the development subteam. Contributed to systems architecture, AI programming, and technical documentation.</li>
+                <li>Spells and System Architecture
+                    <ul>
+                        <li>Researched and evaluated approaches for the spell system, designing an initial architecture with a SpellManager, SpellBase, and individual spell managers.</li>
+                        <li>Researched and integrated Unreal Engine 5's Gameplay Ability System (GAS), replacing spell architecture. This reduced implementation overhead and provided built-in support for damage effects and gameplay cues.</li>
+                        <li>Wrote internal documention on GAS to onboard the rest of the development team.</li>
+                        <li>Established and documented project-wide conventions: file structure, naming conventions, and coding guidelines.</li>
+                        <li>Implemented the Flesh Wall spell: a placeable wall that expires after a set duration.</li>
+                    </ul>
+                </li>
+                <li>Enemy AI
+                    <ul>
+                        <li>Reviewed design team's Meatloaf behavior specification and translated it into an Unreal Engine Behavior Tree.</li>
+                        <li>Implemented Meatloaf's solo behaviors: patrolling, player detection, movement, and projectile attack.</li>
+                        <li>Researched AI formation behavior, writing documentation for the rest of the development team's reference.</li>
+                        <li>Implemented Meatloaf formation behavior: multiple Meatloafs join side-by-side, walking and attacking in formation and restructuring when needed.</li>
+                        <li>Assisted in implementing physical materials to give enemy's targeted damage zones.</li>
+                        <li>Researched and implemented procedural animation using Unreal's locomotion plugin.</li>
+                    </ul>
+                </li>
+
             </ul>
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/dwwXvEhX58o?si=-GSPjqfN0EVu0GEH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            <h3>Process</h3>
             <span>
-                Ursa Magus was built in Unity 6 over a period of four weeks. Each level functions as a self-contained puzzle,
-                introducing mechanics incrementally. Abilities and items each have a dedicated tutorial level to introduce players to the different mechanics. 
+                Interlinked is a 3D first-person roguelite action game built in Unreal Engine 5. This project was built across three milestones as part of a graduate-level game production course.
+                Players could cast six spells including Digitize, Volt Cascade, Life Dash, Contagion, Flesh Wall, and Lockjaw. Levels were populated with three enemy archetypes: CCG, Torture Nexus, and Meatloaf. 
+                The fnal deliverable was a playable demo that served as a tutorial level, introducing the spells, enemies, and enhancement system.
             </span>
             <div>
                 <img class="ls" src="../assets/SM/SM_LightDiagram.webp" title="Light mechanic concepts">
                 <img class="ls" src="../assets/SM/SM_ShadowDiagram.webp" title="Light mechanic concepts">
                 <img class="ls" src="../assets/SM/SM_Flag.webp" title="Moving the light to form the flag">
             </div>
-                In week 1, we set up the basic grid system, with players controlling the Witch and Bear in a simple level with one enemy.
-                After the first playtest, we received valuable feedback that players had a lot of confusion around the tile movement,
-                phase structure, and enemy sightlines. We identified that tutorials would be a necessary next step to onboard players. <br />
-                We also asked players for their insights on future character ability design, and found that they aligned with the team's plans.
-                This indicated to us that the theming and styling of the game matched player expectations.
+                Milestone 1: Core Loop and Scoping. The team entered this course with a very ambitious scope. We had initially planned for six enemies, six spells, and multiple levels. 
+                After discussion with the 3D artists, this was cut down to 3 enemies. The development team was able to implement all six spells in this milestone, setting up the architecture
+                with the GAS framework. This included gameplay tags, gameplay effects, gameplay cues, and gameplay attributes. 
             </span>
             <div>
                 <img class="ls" src="../assets/SM/SM_ShadyPartOfMe.webp" title="Shady Part of Me">
@@ -100,14 +107,8 @@
                 <img class="ls" src="../assets/SM/SM_Moodboard.webp" title="Visual Moodboard">
             </div>
             <span>
-                In week 2, playtesters were more familiar with the turn-based game structure and were able to give more feedback on 
-                the level design. Levels were often too open, allowing players to reach the exit without using the intended ability
-                or item. Some levels were too reliant on either the Witch or Bear, going against the cooperative puzzle-solving aspect of the game.
-                Lastly, players were introduced to the "Bear Hug" ability first, which incapacitates enemies. Because of this, players
-                believed that all enemies had to be defeated to beat the levels, discouraging them from using other abilities or items. <br />
-                I redesigned levels based on this feedback. As a team, we decided on the order in which we wanted to introduce abilities 
-                and spells. I then reworked the levels so that players were forced to use a given ability or item to beat a level. This
-                often meant blocking the enemy from the Bear's reach, or trapping the player with the enemy.
+                Milestone 2: AI Solo Behaviors and Playtest Feedback. In this milestone, we began conducting playtests and implementing feedback. This included spell onboarding,
+                pacing, level design, and UI issues. In this milestone, the development team pivoted to implementing the AI enemies' behavior trees based on the design team's descriptions.
             </span>
             <div>
                 <img style="display: block;" src="../assets/SM/SM_Act1.webp" title="Act 1">
@@ -116,119 +117,10 @@
                 <img style="display: block;" src="../assets/SM/SM_Act4.webp" title="Act 4">
             </div>
             <span>
-                In week 3, we implemented our cloud ability, which allows players to clear gaps in the level, and our tutorial system.
-                Playtesters responded very positively to the new onboarding through tutorials and clearer level design. Players began
-                using their spells and items to beat the levels in clever ways, as opposed to defaulting to any single one. 
+               Milestone 3: AI Group Behaviors, Polish, and Integration. In the final milestone, the team focused on polishing the game through whiteboxing and bug fixes. The development
+               team continued to focus on AI behavior trees, now focusing on group behavior. This meant formations within enemy factions, as well as enemy affiliations with each other. 
+               We also implemented all models and animations for the player, spells, and enemies.
             </span>
-            <div>
-                <img class="ls" src="../assets/SM/SM_Enemies.webp" title="Enemy mechanics">
-                <img class="ls" src="../assets/SM/SM_Hazards.webp" title="Hazard mechanics">
-            </div>
-            <span>
-                In our final sprint, we focused on bugs and implementing updated assets. I handled inconsistencies with the Bear's abilities, 
-                tilemap colors, and layer ordering. 
-            </span>
-
-            # InterLinked
-### 3D First-Person Roguelite | Unreal Engine 5 | 12-Person Team
-
----
-
-**Tagline**
-*Praise PSYCHE. Kill VIRUS. Build a god's immune system from the inside out.*
-
----
-
-## Role — Gia Hur | Programmer
-
-On InterLinked, I was a core programmer on a 12-person team across two semesters, embedded in the development subteam alongside three other developers. My work spanned systems architecture, AI programming, and technical documentation.
-
-### Contributions
-
-**Milestone 1 — Spells & Systems Architecture**
-- Researched and evaluated approaches for the spell system, including designing an initial `SpellManager`, `SpellBase`, and individual spell manager architecture before identifying a superior path forward
-- Researched and integrated Unreal Engine 5's **Gameplay Ability System (GAS)** as the foundation for all spells — this replaced the custom architecture and dramatically reduced implementation overhead while providing built-in support for cooldowns, damage effects, and gameplay cues
-- Wrote internal documentation on GAS for the rest of the development team to reference, enabling other devs to build on the system independently
-- Established project-wide conventions: file structure, naming conventions, and coding guidelines
-- Co-developed the **Digitize** spell (rapid-fire, damage-ramping projectile)
-- Implemented the **Flesh Wall** spell — a placeable environmental object that absorbs damage, expires after a set duration, and explodes on death dealing AoE damage to surrounding entities
-
-**Milestone 2 — Enemy AI**
-- Reviewed the design team's Meatloaf behavior specification and translated it into a working Unreal Behavior Tree implementation
-- Implemented **Meatloaf solo behaviors**: patrolling, player detection, movement, and projectile attacks
-- Began research and early implementation of **Meatloaf formation behavior** — a synergy system where multiple Meatloafs link into a side-by-side defensive line, covering each other's weak spots and restructuring when one is eliminated
-- Researched and began implementing **physical material weak spots** on enemies, enabling targeted damage zones (e.g., Meatloaf's side flanks vs. armored chest plate)
-
-**Postmortem Contributions**
-- Researched procedural animation using Unreal's locomotion plugin
-- Investigated C++ integration in Unreal and its impact on version control workflows (branch conflicts were a recurring issue with large `.uasset` files)
-
----
-
-## Team
-
-| Name | Role |
-|---|---|
-| Producer | Lead Producer |
-| Design Lead | Design Lead |
-| Dev Lead | Development Lead |
-| Gia Hur | Programming |
-| + 8 others | Aesthetics, Design, Development |
-
-*Team of 12 split across three subteams: Aesthetics, Design, and Development. Leads reported to the producer; team members reported to their subteam lead.*
-
----
-
-## Project Description
-
-InterLinked is a 3D first-person roguelite built in Unreal Engine 5 over two milestones as part of a graduate-level game production course. Players take the role of a divine soldier inside the "Divine Apparatus" — a god-machine under attack by a spreading VIRUS infection. Armed with six spells themed around flesh and technology, players navigate a series of interconnected areas, kill enemies to harvest organic and tech materials, and spend those materials at an NPC shopkeeper on persistent upgrades.
-
-The spell kit is built around synergy. Spells include **Digitize** (rapid-fire with damage ramp), **Volt Cascade** (chain lightning), **Life Dash** (invincibility dash that steals health on pass-through), **Contagion** (AoE debuff zone), **Flesh Wall** (placeable cover that explodes on death), and **Lockjaw** (pulls enemies together). Players are intended to chain these — wall enemies off, cluster them, hit them with cascade, finish with contagion.
-
-Three enemy archetypes populate the levels: **CCG** (fast, cowardly scout), **Torture Nexus** (slow sniper), and **Meatloaf** (armored tank with formation synergies). The looting and upgrade system is designed for roguelite replayability — basic enhancements are run-specific, while major structural upgrades (e.g., wall-walking spider legs) persist across deaths.
-
-The final deliverable was a playable demo covering the onboarding area and first system of the Apparatus, including all six spells, three enemy types, and a connected level sequence.
-
----
-
-## Our Process — Iteration Across Three Milestones
-
-**Milestone 1 — Core Loop & Scope Reckoning**
-
-The team entered production with ambitious scope: six enemies, six spells, a boss, a shop, and a full onboarding sequence. Within the first few weeks it became clear this was not achievable. The team cut from six enemies to four with a boss, then later cut the boss and boss room entirely. The playtest target shifted to a sandbox space for testing combat feel rather than a complete experience.
-
-Despite the cuts, the spell side overdelivered: six spells were implemented where three were originally planned. This was largely enabled by the discovery of GAS — once the system was integrated and documented, the per-spell implementation cost dropped significantly, and additional spells became feasible within the milestone window.
-
-The major process issue in this milestone was pre-production delays. Cross-team communication was sparse, as class time was used for subteam meetings rather than whole-team syncs. This became the team's most persistent structural problem.
-
-**Milestone 2 — AI, Level Design & Playtest Feedback**
-
-The second milestone introduced enemy behaviors, level design, and full playtest cycles. Playtest feedback was extensive and shaped the development backlog directly:
-
-*Level design* feedback identified that defensive abilities were all introduced before offensive ones, creating a pacing problem. Rooms were too small for certain abilities to read correctly (Lockjaw's area needed to be larger; the Meatloaf room needed the enemy to stay centered). Players were consistently reaching unintended areas (escaping bounds via Flesh Wall), which the team addressed with collision adjustments.
-
-*UI/UX* feedback was consistent across all playtesters: ability icons were too small, cooldown states were hard to read, and the fill-up animation was confusing. A persistent bug caused the cooldown timer to go negative. Players also couldn't tell when abilities had recharged.
-
-*Enemy feedback* flagged that dead body colliders were blocking shots and pathfinding — a high-frequency complaint. CCGs were not reacting to being attacked, and Torture Nexus was perceived as too difficult with hitscan attacks.
-
-*Flesh Wall specifically* generated the most feedback of any single mechanic: players consistently aimed at walls instead of the floor, the cooldown felt punishing on a miss, the controls were unintuitive on controller, and the wall's disappearance was abrupt with no warning. On the positive side, players discovered and enjoyed using it as a movement tool (platforming, flanking cover), which the team leaned into as an intended secondary use.
-
-**Milestone 3 — Polish & Integration**
-
-The final milestone focused on bringing systems to a more complete state rather than adding new content. The postmortem identified that the game was hitting approximately 50–60% of the potential of each of its systems — a diagnosis shared independently by both playtester feedback and the faculty reviewer. The team's reflection acknowledged that beginning spell and enemy implementation without a fully locked narrative direction caused some cohesion issues, and that a vertical slice approach (building the game chronologically rather than by mechanic) may have produced a tighter result.
-
----
-
-## Technical Notes
-
-- **Gameplay Ability System (GAS)**: All spells are implemented as GAS Gameplay Abilities. Cooldowns and damage-over-time are managed through Gameplay Effects, which are duplicated from a base template and configured per-spell. This architecture allowed new spells to be added with minimal boilerplate.
-- **Behavior Trees & Blackboards**: Enemy AI runs on UE5 Behavior Trees with custom Behavior Tree Tasks written in Blueprint. Meatloaf formation behavior required solving group movement without excessive math — solutions informed in part by consultation with faculty (David Sanchez) on collision layering to prevent AI clipping while maintaining group cohesion.
-- **Version Control**: The team used GitHub with Unreal Engine, which caused recurring merge conflicts on binary `.uasset` files. This was an unresolved workflow issue throughout production.
-
----
-
-**Tools Used**
-Unreal Engine 5 · Blueprint · C++ · GAS (Gameplay Ability System) · GitHub · Trello · Google Drive · Canva · Pinterest
         </div>
     </div>
 </body>
