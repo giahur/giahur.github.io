@@ -116,10 +116,10 @@ nav {
 }
 
 .left {
-    flex: 75%;
+    flex: 50%;
 }
 .right {
-    flex: 25%;
+    flex: 50%;
 }
 img {
     width: 100%;
@@ -311,7 +311,7 @@ div.featured-projects {
     margin: 1rem;
 }
 
-/* Responsive Design */
+/* Responsive Design
 @media (max-width: 600px) {
     nav {
         width: 100%;
@@ -379,3 +379,4 @@ div.featured-projects {
         font-size: 1rem;
     }
 }
+    */
