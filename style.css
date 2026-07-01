@@ -7,21 +7,20 @@
 /* Text */
 body {
     font-family: 'Karla', serif;
-    background-color: #EFE9E7;
+    background-color: #fbfbfe;
     margin: 0;
-    color: #524a63;
+    color: #353342;
 }
 h1 {
-    font-family: 'Mansalva', sans-serif;
+    color: #7373d3;
+    font-family: 'Mansalva';
+    font-weight: 800;
     font-size: 6rem;
     margin: 0;
-    color: #648C85;
 }
 h2 {
-    font-family: 'Mansalva', sans-serif;
     font-size: clamp(2rem, 2vw + 1rem, 3.5rem);
     margin: 0;
-    color: #648C85;
 }
 h3 {
     font-size: clamp(2rem, 2vw, 2.5rem);
@@ -66,7 +65,7 @@ p {
 .logo {
     font-family: 'Zeyada', serif;
     font-size: clamp(4rem, 5vw, 5rem); /*4rem;*/
-    color: #648C85;
+    color: #7373d3;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -76,7 +75,7 @@ nav {
     left: 0;
     height: 100vh;
     width: clamp(270px, 15vw, 300px);
-    background-color: #685e7e;
+    background-color: #edeef3;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
@@ -118,24 +117,29 @@ nav ul {
 }
 nav ul li {
     text-decoration: none;
-    color: white;
     font-size: clamp(1rem, 1vw + 0.5rem, 2rem); /*18px;*/
 }
 nav ul li a {
-    font-family: 'Mansalva', sans-serif;
-    color: #EFE9E7;
+    font-family: 'Karla', serif;
+    color: #353342;
     text-decoration: none;
     font-size: clamp(1.5rem, 1.25vw, 2rem); /*1.5rem;*/
-    padding: 0.5rem 1rem;
+    font-weight: 500;
+    padding: 0.8rem 1rem;
     display: block;
-    border-radius: 5px;
-    transition: background-color 0.5s, box-shadow 0.5s;
+    border-radius: 1rem;
+    transition: background-color 0.5s;
 }
-nav ul li a:hover,
+nav ul li a:hover
+{
+    background-color: #d9d5f6;
+    border-radius: 1rem;
+    transition: background-color 0.5s;
+}
 nav ul li a.active {
-    background-color: #524a63;
-    color: #EFE9E7;
-    box-shadow: 0px 0px 10px #3e394c;
+    background-color: #7373d3;
+    border-radius: 1rem;
+    color: #fbfbfe;
 }
 nav .icons {
     display: flex;
@@ -145,13 +149,12 @@ nav .icons {
     justify-content: center;
 }
 .icon-link {
-    color: #EFE9E7;
+    color: #7373d3;
     font-size: clamp(2.5rem, 2vw, 3.5rem); /*2rem;*/
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
 }
 .icon-link:hover {
-    color: #9ad4c0;
     transform: scale(1.1);
 }
 .menu-toggle {
@@ -251,8 +254,8 @@ div.featured-projects {
     border-radius: 0.5rem;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #648C85;
-    background: #fff;
+    color: #7373d3;
+    background: #fbfbfe;
 
     white-space: nowrap;
 }
@@ -284,7 +287,7 @@ div.featured-projects {
 .info-card {
     display: flex;
     flex-direction: column;
-    background: #DFD8DA;
+    background: #d9d5f6;
     border-radius: 1rem;
     overflow: hidden;
     text-decoration: none;
@@ -294,7 +297,7 @@ div.featured-projects {
     margin: 1rem;
 }
 
-/* Responsive Design*/
+/* Responsive Design
 @media (max-width: 600px) {
     nav {
         width: 100%;
@@ -362,3 +365,4 @@ div.featured-projects {
         font-size: 1rem;
     }
 }
+    */
