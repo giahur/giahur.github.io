@@ -13,45 +13,27 @@ body {
 }
 h1 {
     font-family: 'Mansalva', sans-serif;
-    font-size: clamp(3rem, 6vw, 7rem); /*7em;*/
+    font-size: 6rem;
+    margin: 0;
     color: #648C85;
-    margin: 0 0 0.5rem;
 }
 h2 {
     font-family: 'Mansalva', sans-serif;
-    font-size: clamp(2rem, 2vw + 1rem, 3.5rem); /*3em;*/
+    font-size: clamp(2rem, 2vw + 1rem, 3.5rem);
+    margin: 0;
     color: #648C85;
-    margin: 0 0 0.5rem;
 }
 h3 {
-    font-family: 'Karla', serif;
-    font-size: clamp(2rem, 2vw, 2.5rem); /*2em;*/
+    font-size: clamp(2rem, 2vw, 2.5rem);
     font-weight: 800;
     font-style: italic;
-    margin: 0 0 0.5rem;
+    margin: 0;
 }
-h4 {
-    margin-bottom: 0.5rem;
-}
-
 p {
     font-size: clamp(1.3rem, 1vw, 1.5rem);
     font-weight: 300;
-    font-style: italic;
-    margin: 0 0 0rem;
+    margin: 0rem;
     line-height: 1.5;
-}
-
-.project {
-    margin: 3vh 0; /*2rem 0;*/
-}
-.ls {
-    width: 35%;
-    max-width: 400px;
-}
-.pt {
-    width: 20%;
-    max-width: 250px;
 }
 
 /* Project Buttons */
@@ -64,7 +46,7 @@ p {
     font-style: italic;
     font-size: clamp(1.5rem, 1.25vw, 2rem); /*1.3rem;*/
     padding: clamp(0.4rem, 0.8vw, 0.8rem) clamp(1rem, 1.5vw, 1.5rem); /*0.5rem 1.5rem;*/
-    margin: 1rem 0.5rem;
+    margin: 0.5rem;
     display: inline-block;
     text-align: center;
     transition: background-color 0.5s, box-shadow 0.5s, transform 0.2s;
@@ -77,12 +59,7 @@ p {
     transform: translateY(-2px);
 }
 .contact {
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    margin: 0.75rem auto;
-    font-size: clamp(1.25rem, 1vw + 0.5rem, 2rem);
-    padding: clamp(0.6rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
+    width: 20rem;
 }
 
 /* Nav bar */
@@ -110,6 +87,12 @@ nav {
     margin-left: clamp(270px, 15vw, 300px); 
     padding: 2vw;
     box-sizing: border-box;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .row {
     display: flex;
@@ -311,7 +294,7 @@ div.featured-projects {
     margin: 1rem;
 }
 
-/* Responsive Design
+/* Responsive Design*/
 @media (max-width: 600px) {
     nav {
         width: 100%;
@@ -379,4 +362,3 @@ div.featured-projects {
         font-size: 1rem;
     }
 }
-    */
