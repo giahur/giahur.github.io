@@ -4,6 +4,14 @@
 /* Icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
+:root {
+  --primary-color: #d9d5f6;
+  --accent-color: #7373d3;
+  --bg-color: #fbfbfe;
+  --bg2-color: #edeef3;
+  --text-color: #353342;
+}
+
 /* Text */
 body {
     font-family: 'Karla', serif;
