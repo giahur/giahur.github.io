@@ -27,13 +27,15 @@ h1 {
     margin: 0;
 }
 h2 {
-    font-size: clamp(2rem, 2vw + 1rem, 3.5rem);
-    margin: 0;
-}
-h3 {
     font-size: clamp(2rem, 2vw, 2.5rem);
     font-weight: 800;
     font-style: italic;
+    margin: 0;
+    font: 'Mansalva';
+    color: var(--accent-color)
+}
+h3 {
+    font-size: 2rem; /* clamp(1rem, 2vw, 3.5rem);*/
     margin: 0;
 }
 p {
