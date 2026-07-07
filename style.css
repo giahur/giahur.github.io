@@ -7,20 +7,20 @@
 :root {
   --primary-color: #d9d5f6;
   --accent-color: #7373d3;
-  --bg-color: #fbfbfe;
-  --bg2-color: #edeef3;
+  --bg-white: #fbfbfe;
+  --bg2-grey: #edeef3;
   --text-color: #353342;
 }
 
 /* Text */
 body {
     font-family: 'Karla', serif;
-    background-color: #fbfbfe;
+    background-color: var(--bg-white);
     margin: 0;
-    color: #353342;
+    color: var(--text-color);
 }
 h1 {
-    color: #7373d3;
+    color: var(--accent-color);
     font-family: 'Mansalva';
     font-weight: 800;
     font-size: 6rem;
@@ -73,7 +73,7 @@ p {
 .logo {
     font-family: 'Zeyada', serif;
     font-size: clamp(4rem, 5vw, 5rem); /*4rem;*/
-    color: #7373d3;
+    color: var(--accent-color);
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -83,7 +83,7 @@ nav {
     left: 0;
     height: 100vh;
     width: clamp(270px, 15vw, 300px);
-    background-color: #edeef3;
+    background-color: var(--bg2-grey);
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
@@ -129,7 +129,7 @@ nav ul li {
 }
 nav ul li a {
     font-family: 'Karla', serif;
-    color: #353342;
+    color: var(--text-color);
     text-decoration: none;
     font-size: clamp(1.5rem, 1.25vw, 2rem); /*1.5rem;*/
     font-weight: 500;
@@ -140,14 +140,14 @@ nav ul li a {
 }
 nav ul li a:hover
 {
-    background-color: #d9d5f6;
+    background-color: var(--primary-color);
     border-radius: 1rem;
     transition: background-color 0.5s;
 }
 nav ul li a.active {
-    background-color: #7373d3;
+    background-color: var(--accent-color);
     border-radius: 1rem;
-    color: #fbfbfe;
+    color: var(--bg-white);
 }
 nav .icons {
     display: flex;
@@ -157,7 +157,7 @@ nav .icons {
     justify-content: center;
 }
 .icon-link {
-    color: #7373d3;
+    color: var(--accent-color);
     font-size: clamp(2.5rem, 2vw, 3.5rem); /*2rem;*/
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
@@ -262,8 +262,8 @@ div.featured-projects {
     border-radius: 0.5rem;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #7373d3;
-    background: #fbfbfe;
+    color: var(--accent-color);
+    background: var(--bg-white);
 
     white-space: nowrap;
 }
@@ -295,7 +295,7 @@ div.featured-projects {
 .info-card {
     display: flex;
     flex-direction: column;
-    background: #d9d5f6;
+    background: var(--primary-color);
     border-radius: 1rem;
     overflow: hidden;
     text-decoration: none;
