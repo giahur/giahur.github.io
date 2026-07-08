@@ -12,7 +12,7 @@
   --text-color: #353342;
 }
 
-/* Text */
+/* == TEXT == */
 body {
     font-family: 'Karla', serif;
     background-color: var(--bg-white);
@@ -31,26 +31,45 @@ h2 {
     font-weight: 800;
     font-style: italic;
     margin: 0;
-    font: 'Mansalva';
     color: var(--accent-color)
 }
 h3 {
-    font-size: 2rem; /* clamp(1rem, 2vw, 3.5rem);*/
+    font-size: 1.8rem; /* clamp(1rem, 2vw, 3.5rem);*/
     margin: 0;
+}
+h4 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
 }
 p {
     font-size: clamp(1.3rem, 1vw, 1.5rem);
     font-weight: 300;
-    margin: 0rem;
+    margin: 0;
     line-height: 1.5;
 }
+.black {
+    color: var(--text-color)
+}
 
-/* Content Containers */
+/* == CONTENT CONTAINERS == */
 .container {
     margin-left: clamp(270px, 15vw, 300px); 
     padding: 2vw;
     box-sizing: border-box;
 }
+.info-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+    padding: 1rem;
+    margin: 1rem;
+}
+
 .center {
     display: flex;
     flex-direction: column;
@@ -60,7 +79,6 @@ p {
 .row {
     display: flex;
 }
-
 .left {
     flex: 50%;
 }
@@ -72,11 +90,7 @@ img {
     object-fit: cover;
 }
 
-.menu-toggle {
-    display: none;
-}
-
-/* Project Buttons */
+/* == PROJECT BUTTONS == */
 .button {
     border: none;
     border-radius: 2rem;
@@ -100,14 +114,7 @@ img {
     width: 20rem;
 }
 
-/* Nav bar */
-.logo {
-    font-family: 'Zeyada', serif;
-    font-size: clamp(4rem, 5vw, 5rem); /*4rem;*/
-    color: var(--accent-color);
-    text-align: center;
-    margin-bottom: 1rem;
-}
+/* == NAV BAR == */
 nav {
     position: fixed;
     top: 0;
@@ -129,10 +136,6 @@ nav ul {
     flex-direction: column;
     gap: 15px;
 }
-nav ul li {
-    text-decoration: none;
-    font-size: clamp(1rem, 1vw + 0.5rem, 2rem); /*18px;*/
-}
 nav ul li a {
     font-family: 'Karla', serif;
     color: var(--text-color);
@@ -142,19 +145,20 @@ nav ul li a {
     padding: 0.8rem 1rem;
     display: block;
     border-radius: 1rem;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
 }
 nav ul li a:hover
 {
     background-color: var(--primary-color);
     border-radius: 1rem;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
 }
 nav ul li a.active {
     background-color: var(--accent-color);
     border-radius: 1rem;
     color: var(--bg-white);
 }
+/* nav icons */
 nav .icons {
     display: flex;
     gap: 15px;
@@ -173,13 +177,25 @@ nav .icons {
     transform: scale(1.1);
 }
 
-/* Project cards */
+.menu-toggle {
+    display: none;
+}
+
+/* == PROJECTS == */
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
+    margin: 1rem;
     gap: 2rem;
-    width: 100%;
-    box-sizing: border-box;
+    justify-content: center;
+}
+.games-grid .project-card {
+    flex: 0 0 calc(24% - 1.3rem);
+    max-width: calc(24% - 1.3rem);
+}
+.web-grid .project-card {
+    flex: 0 0 calc(50% - 1.3rem);
+    max-width: calc(50% - 1.3rem);
 }
 .project-card {
     display: flex;
@@ -193,16 +209,8 @@ nav .icons {
     transition: transform 0.3s;
     flex: 0 0 clamp(250px, 30vw, 350px);
 }
-.games-grid .project-card {
-    flex: 0 0 calc(33% - 1.3rem);
-    max-width: calc(33% - 1.3rem);
-}
-.web-grid .project-card {
-    flex: 0 0 calc(50% - 1.3rem);
-    max-width: calc(50% - 1.3rem);
-}
 .project-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 .project-card img {
     height: 150px;
@@ -216,31 +224,33 @@ nav .icons {
 .project-info h3 {
     margin-bottom: 0rem;
     font-size: 1.5rem;
-    color: #648C85;
+    color: var(--accent-color);
     font-family: 'Mansalva', sans-serif;
     font-style: normal;
 }
 .project-info p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     font-size: 1rem;
     font-style: normal;
     color: #524a63;
 }
+/* tech stack */
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.3rem;
     min-height: 1rem;
+    margin: 0 0 0.5rem 0;
 }
 .tech-stack span {
     padding: 0.4rem 0.7rem;
     display: inline-flex;
     align-items: center;
     border-radius: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
-    color: var(--accent-color);
-    background: var(--bg-white);
+    color: var(--bg-white);
+    background: var(--accent-color);
 
     white-space: nowrap;
 }
@@ -250,6 +260,7 @@ nav .icons {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.75rem;
     margin-top: auto;
+    
     font-size: 0.95rem;
 }
 .project-details div {
@@ -261,22 +272,9 @@ nav .icons {
     font-size: 0.8rem;
     margin-bottom: 0.2rem;
 }
-
 .project-details strong {
     color: var(--accent-color);
     font-weight: 600;
-}
-.info-card {
-    display: flex;
-    flex-direction: column;
-    background: var(--primary-color);
-    border-radius: 1rem;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s;
-    padding: 1rem;
-    margin: 1rem;
 }
 
 /* Responsive Design
