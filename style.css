@@ -52,8 +52,8 @@ p {
 }
 
 /* == CONTENT CONTAINERS == */
-.container {
-    margin-left: clamp(270px, 15vw, 300px); 
+.container {margin: 20px 100px 0 400px;
+    /*margin-left: clamp(270px, 15vw, 300px); */
     padding: 2vw;
     box-sizing: border-box;
 }
@@ -191,7 +191,7 @@ nav .icons {
 }
 .games-grid .project-card {
     flex: 0 0 calc(24% - 1.3rem);
-    max-width: calc(24% - 1.3rem);
+    max-width: calc(10% - 1.3rem);
 }
 .web-grid .project-card {
     flex: 0 0 calc(50% - 1.3rem);
