@@ -189,14 +189,6 @@ nav .icons {
     gap: 2rem;
     justify-content: center;
 }
-.games-grid .project-card {
-    flex: 0 0 calc(24% - 1.3rem);
-    max-width: calc(10% - 1.3rem);
-}
-.web-grid .project-card {
-    flex: 0 0 calc(50% - 1.3rem);
-    max-width: calc(50% - 1.3rem);
-}
 .project-card {
     display: flex;
     flex-direction: column;
@@ -207,7 +199,7 @@ nav .icons {
     color: inherit;
     box-shadow: 0 4px 12px #3E394C;
     transition: transform 0.3s;
-    flex: 0 0 clamp(250px, 30vw, 350px);
+    flex: 300px;
 }
 .project-card:hover {
     transform: scale(1.03);
