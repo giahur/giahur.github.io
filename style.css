@@ -199,7 +199,8 @@ nav .icons {
     color: inherit;
     box-shadow: 0 4px 12px #3E394C;
     transition: transform 0.3s;
-    flex: 300px;
+    flex: 250px;
+    min-width: 300px;
 }
 .project-card:hover {
     transform: scale(1.03);
