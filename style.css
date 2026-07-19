@@ -79,10 +79,7 @@ p {
 .row {
     display: flex;
 }
-.left {
-    flex: 50%;
-}
-.right {
+.half {
     flex: 50%;
 }
 img {
@@ -206,8 +203,22 @@ nav .icons {
 .project-card:hover {
     transform: scale(1.03);
 }
+.project-card:hover .replace-img {
+    opacity: 1;
+}
 .project-card img {
     height: 150px;
+}
+.img-container {
+    width: 100%;
+    position: relative;
+}
+.replace-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.3s;
 }
 .project-info {
     flex: 1;
