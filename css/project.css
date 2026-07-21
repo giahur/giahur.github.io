@@ -1,0 +1,48 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Mansalva&family=Zeyada&display=swap');
+
+/* Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+:root {
+  --primary-color: #d9d5f6;
+  --accent-color: #7373d3;
+  --bg-white: #fbfbfe;
+  --bg2-grey: #edeef3;
+  --text-color: #353342;
+}
+.row {
+    display: flex;
+}
+.half {
+    flex: 50%;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.li {
+    
+}
+/* Project Details */
+.project-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-top: auto;
+    
+    font-size: 0.95rem;
+}
+.project-details div {
+    display: flex;
+    flex-direction: column;
+}
+.project-details span {
+    color: #999;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.project-details strong {
+    color: var(--accent-color);
+    font-weight: 600;
+}

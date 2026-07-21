@@ -1,0 +1,112 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Mansalva&family=Zeyada&display=swap');
+
+/* Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+:root {
+  --primary-color: #d9d5f6;
+  --accent-color: #7373d3;
+  --bg-white: #fbfbfe;
+  --bg2-grey: #edeef3;
+  --text-color: #353342;
+}
+
+/* == TEXT == */
+body {
+    font-family: 'Karla', serif;
+    background-color: var(--bg-white);
+    margin: 0;
+    color: var(--text-color);
+}
+h1 {
+    color: var(--accent-color);
+    font-family: 'Mansalva';
+    font-weight: 800;
+    font-size: 6rem;
+    margin: 0;
+}
+h2 {
+    font-size: clamp(2rem, 2vw, 2.5rem);
+    font-weight: 800;
+    font-style: italic;
+    margin: 0;
+    color: var(--accent-color)
+}
+h3 {
+    font-size: 1.8rem; /* clamp(1rem, 2vw, 3.5rem);*/
+    margin: 0;
+}
+h4 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+p, li {
+    font-size: clamp(1.3rem, 1vw, 1.5rem);
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.5;
+}
+.black {
+    color: var(--text-color)
+}
+
+/* == CONTENT CONTAINERS == */
+.container {margin: 20px 150px 0 400px;
+    /*margin-left: clamp(270px, 15vw, 300px); */
+    padding: 2vw;
+    box-sizing: border-box;
+}
+.info-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+    padding: 1rem;
+    margin: 1rem;
+}
+/* == PROJECT BUTTONS == */
+.button {
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--accent-color);
+    color: var(--bg-white);
+    font-family: 'Karla', serif;
+    font-style: italic;
+    font-size: clamp(1.5rem, 1.25vw, 2rem); /*1.3rem;*/
+    padding: clamp(0.4rem, 0.8vw, 0.8rem) clamp(1rem, 1.5vw, 1.5rem); /*0.5rem 1.5rem;*/
+    margin: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button:hover {
+    transform: scale(1.05);
+}
+
+/* tech stack */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    min-height: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+.tech-stack span {
+    padding: 0.4rem 0.7rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bg-white);
+    background: var(--accent-color);
+
+    white-space: nowrap;
+}
