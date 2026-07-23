@@ -17,7 +17,7 @@ nav {
     top: 0;
     left: 0;
     height: 100vh;
-    width: clamp(270px, 15vw, 300px);
+    width: 300px;
     background-color: var(--bg2-grey);
     padding: 20px 15px;
     display: flex;

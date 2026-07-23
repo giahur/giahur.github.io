@@ -52,7 +52,7 @@ p, li {
 }
 
 /* == CONTENT CONTAINERS == */
-.container {margin: 20px 150px 0 400px;
+.container {margin: 20px 200px 0 500px;
     /*margin-left: clamp(270px, 15vw, 300px); */
     padding: 2vw;
     box-sizing: border-box;
