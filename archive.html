@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>archive</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/allprojects.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./assets/gia.svg">
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul>
+                <li><a href="./index">Home</a></li>
+                <li><a href="./projects" class="active">Projects</a></li>
+                <li><a href="./education">Education</a></li>
+                <li><a href="./hobbies">Hobbies</a></li>
+                <li><a href="./contact">Contact Me</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/giahur" target="_blank" class="icon-link">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+                <a href="https://giahur.itch.io/" target="_blank" class="icon-link">
+                    <i class="fa-brands fa-itch-io"></i>
+                </a>
+            </div>
+            <div>
+                ©2026 Gia Hur
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Archive</h2>
+        <div class="projects-grid">
+            <a href="./archive/todolist.html" class="project-card">
+                <img src="./archive/TDL/TDL_Header.webp">
+                <div class="project-info">
+                    <h3>To-Do List</h3>
+                    <p>Dynamic system for users to add, update, and delete tasks</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>1 person</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>2 weeks</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                        <span>TypeScript</span>
+                        <span>HTML</span>
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="./archive/shadowmagic.html" class="project-card">
+                <img src="./archive/SM/SM_Title.webp">
+                <div class="project-info">
+                    <h3>Shadow Magic</h3>
+                    <p>2-D shadow platformer prototype</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Gameplay Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>5 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>3 weeks</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Unity</span>
+                        <span>C#</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+            const menu = nav.querySelector("ul");
+
+            toggle.addEventListener("click", function () {
+                menu.classList.toggle("show");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

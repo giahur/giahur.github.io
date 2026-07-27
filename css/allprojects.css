@@ -78,7 +78,7 @@
 /* Project Details */
 .project-details {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1.5fr 1fr 1fr;
     gap: 0.75rem;    
     font-size: 0.95rem;
     margin-top: auto;
