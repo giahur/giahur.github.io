@@ -117,3 +117,14 @@
 
     white-space: nowrap;
 }
+/* Read More */
+#more {
+    display: none;
+}
+.center {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
