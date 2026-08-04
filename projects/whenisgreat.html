@@ -38,81 +38,105 @@
     </header>
 
     <div class="container">
-        <img src="../assets/WIG/WIG_Header.webp">
-        <h2>WhenIsGreat</h2>
-        <div class="project">
+        <div class="center">
+            <h2>WhenIsGreat</h2>
             <p> Browser Application designed to streamline scheduling group meetings.</p>
-            <div class="tech-stack">
-                <span>React</span>
-                <span>Spring Boot</span>
-                <span>MySQL</span>
-                <span>Java</span>
-                <span>CSS</span>
-                <span>HTML</span>
-                <span>JavaScript</span>                    
-            </div>
-            <div class="project-details">
-                <div>
-                    <span>Role:</span>
-                    <strong>Developer</strong>
-                </div>
-                <div>
-                    <span>Team Size:</span>
-                    <strong>4 people</strong>
-                </div>
-                <div>
-                    <span>Duration:</span>
-                    <strong>3 months</strong>
-                </div>
-            </div>
-            <p>WhenIsGreat is a browser-based scheduling platform designed to make scheduling faster, simpler, and more intuitive
-                than existing tools. It allows users to log in using their Google accounts, create an event, and share it with others 
-                via email or link. Members can sync their Google Calendars or manually input availability, which is then merged into a 
-                shared calendar view. The platform highlights availabilities, allowing users to vote on meeting times and finalize 
-                the best option. Once finalized, the system generates a Google Calendar event for members.
-            </p>
-            <h3>Responsibilities</h3>
-            <p>Frontend / UI Developer</p>
-            <ul>
-                <li>Designed and implemented user interfaces using React.</li>
-                <li>Ensured smooth interaction between UI components and backend APIs by connecting components.</li>
-                <li>Handled data flow between frontend, backend, database, and Google Calendar services.</li>
-                <li>Assisted with UI testing, bug fixes, and system integration.</li>
-            </ul>
-            <img class="ls" src="../assets/WIG/WIG_Welcome.webp" title="Log in page">
-            <img class="ls" src="../assets/WIG/WIG_Home.webp" title="Home page">
-            <img class="ls" src="../assets/WIG/WIG_Calendar.webp" title="Events synced with Google Calendar from all team members">
-            <img class="ls" src="../assets/WIG/WIG_Delete.webp" title="Delete event confirmation">
+        </div>
 
-            <h3>Process</h3>
-            <span>
-                WhenIsGreat was a project developed through a full software engineering lifecycle. Our team began
-                by identifying a common problem: scheduling group meetings. We then found common frustrations with 
-                existing scheduling tools such as lack of Google Calendar integration, poor visual design, and limited
-                functionality for students. We designed a solution, outlining our Software Requirements Specification (SRS) 
-                and creating UI mockups. This included functions such as OAuth login, calendar syncing, availability visualization,
-                and event voting. 
-                <img style="display: block;" src="../assets/WIG/WIG_UIUseCaseDiagram.webp" title="UI and Use Case Diagram">
-            
-                <br />
-                Across three sprints, we followed an iterative development process. We began with core features such as account login, 
-                event creation, and calendar syncing. As the frontend developer, I implemented the user interface using React. I focused on creating an intuitive layout 
-                with reusable components for event creation, calendar views, and voting.
-                <br />
-                One challenge that we faced was integrating Google OAuth and Google Calendar APIs. Continuous synchronization proved
-                to be complex, and introduced security risks. We decided to pivot to a manual "Sync with Google Calendar" button to 
-                allow users to control when their data was shared, while still providing the core functionality of our platform. This
-                additionally reduced API calls and simplified debugging.
-                <br />
-                Ultimately, this project strengthened my experience in building scalable frontends 
-                that communicate with secured APIs, designing responsive layouts, and collaborating across frontend-backend.
-            </span>
-            <div>
-                <img class="ls" src="../assets/WIG/WIG_ArchOverview.webp" title="Architecture overview diagram">
-                <img class="ls" src="../assets/WIG/WIG_DesignPackageOverview.webp" title="Overview of design packages">
-                <img class="ls" src="../assets/WIG/WIG_FeaturesDiagram.webp" title="Features diagram">
+        <div class="row">
+            <div class="half">
+                <div class="project-details">
+                    <div>
+                        <span>Role:</span>
+                        <strong>Developer</strong>
+                    </div>
+                    <div>
+                        <span>Team Size:</span>
+                        <strong>4 people</strong>
+                    </div>
+                    <div>
+                        <span>Duration:</span>
+                        <strong>3 months</strong>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Spring Boot</span>
+                    <span>MySQL</span>
+                    <span>Java</span>
+                    <span>CSS</span>
+                    <span>HTML</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="half">
+                <p>
+                    WhenIsGreat allows users to log in using their Google accounts, create an event, and
+                    share it with others
+                    via email or link. Members can sync their Google Calendars or manually input availability, which
+                    is then merged into a
+                    shared calendar view. The platform highlights availabilities, allowing users to vote on meeting
+                    times and finalize
+                    the best option. Once finalized, the system generates a Google Calendar event for members.
+                </p>
             </div>
         </div>
+        <div class="center">
+            <img src="../assets/RH/RH_Collectible.webp" title="Picking up a collectible">
+        </div>
+
+        <h3>Responsibilities</h3>
+        <p>Frontend / UI Developer</p>
+        <ul>
+            <li>Designed and implemented user interfaces using React.</li>
+            <li>Ensured smooth interaction between UI components and backend APIs by connecting components.</li>
+            <li>Handled data flow between frontend, backend, database, and Google Calendar services.</li>
+            <li>Assisted with UI testing, bug fixes, and system integration.</li>
+        </ul>
+        <img class="ls" src="../assets/WIG/WIG_Welcome.webp" title="Log in page">
+        <img class="ls" src="../assets/WIG/WIG_Home.webp" title="Home page">
+        <img class="ls" src="../assets/WIG/WIG_Calendar.webp"
+            title="Events synced with Google Calendar from all team members">
+        <img class="ls" src="../assets/WIG/WIG_Delete.webp" title="Delete event confirmation">
+
+        <h3>Process</h3>
+        <span>
+            WhenIsGreat was a project developed through a full software engineering lifecycle. Our team began
+            by identifying a common problem: scheduling group meetings. We then found common frustrations with
+            existing scheduling tools such as lack of Google Calendar integration, poor visual design, and limited
+            functionality for students. We designed a solution, outlining our Software Requirements Specification
+            (SRS)
+            and creating UI mockups. This included functions such as OAuth login, calendar syncing, availability
+            visualization,
+            and event voting.
+            <img style="display: block;" src="../assets/WIG/WIG_UIUseCaseDiagram.webp" title="UI and Use Case Diagram">
+
+            <br />
+            Across three sprints, we followed an iterative development process. We began with core features such as
+            account login,
+            event creation, and calendar syncing. As the frontend developer, I implemented the user interface using
+            React. I focused on creating an intuitive layout
+            with reusable components for event creation, calendar views, and voting.
+            <br />
+            One challenge that we faced was integrating Google OAuth and Google Calendar APIs. Continuous
+            synchronization proved
+            to be complex, and introduced security risks. We decided to pivot to a manual "Sync with Google
+            Calendar" button to
+            allow users to control when their data was shared, while still providing the core functionality of our
+            platform. This
+            additionally reduced API calls and simplified debugging.
+            <br />
+            Ultimately, this project strengthened my experience in building scalable frontends
+            that communicate with secured APIs, designing responsive layouts, and collaborating across
+            frontend-backend.
+        </span>
+        <div>
+            <img class="ls" src="../assets/WIG/WIG_ArchOverview.webp" title="Architecture overview diagram">
+            <img class="ls" src="../assets/WIG/WIG_DesignPackageOverview.webp" title="Overview of design packages">
+            <img class="ls" src="../assets/WIG/WIG_FeaturesDiagram.webp" title="Features diagram">
+        </div>
+    </div>
     </div>
 </body>
+
 </html>
