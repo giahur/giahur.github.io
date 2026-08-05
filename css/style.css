@@ -58,8 +58,6 @@ p, li {
     box-sizing: border-box;
 }
 .info-card {
-    display: flex;
-    flex-direction: column;
     background: var(--primary-color);
     border-radius: 1rem;
     overflow: hidden;
