@@ -12,6 +12,9 @@
   --text-color: #353342;
 }
 /* == NAV BAR == */
+.logo {
+    width: 100%;
+}
 nav {
     position: fixed;
     top: 0;
