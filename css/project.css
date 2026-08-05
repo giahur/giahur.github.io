@@ -21,7 +21,9 @@ h3 {
 }
 .half {
     flex: 50%;
-    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .center {
     display: flex;
@@ -31,6 +33,9 @@ h3 {
     margin-bottom: 20px;
 }
 img {
+    width: 30%;
+}
+.main-img {
     width: 70%;
 }
 .right {
@@ -42,7 +47,7 @@ img {
     flex-wrap: wrap;
     gap: 0.3rem;
     min-height: 1rem;
-    margin: 0 0 0.5rem 0;
+    margin: 0;
 }
 .tech-stack span {
     padding: 0.4rem 0.7rem;
@@ -61,7 +66,8 @@ img {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
     gap: 1rem;
-    margin-top: auto;
+    margin-top: 0;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
 }
 .project-details div {
