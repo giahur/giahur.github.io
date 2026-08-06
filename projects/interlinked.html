@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <img src="/assets/gia.svg">
+            <img class="logo" src="/assets/gia.svg">
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul>
                 <li><a href="/index">Home</a></li>
@@ -38,101 +38,122 @@
     </header>
 
     <div class="container">
-        <img src="../assets/SM/SM_Header.webp">
-        <h2>Interlinked</h2>
-        <div class="project">
+        <div class="center">
+            <h2>Interlinked</h2>
             <p>3-D First-Person Action Game</p>
-            <div class="tech-stack">
-                <span>Unreal Engine 5</span>
-                <span>C#</span>
-                <span>Blueprints</span>
-                <span>GAS</span>
-            </div>
-            <div class="project-details">
-                <div>
-                    <span>Role:</span>
-                    <strong>Developer</strong>
-                </div>
-                <div>
-                    <span>Team Size:</span>
-                    <strong>13 people</strong>
-                </div>
-                <div>
-                    <span>Duration:</span>
-                    <strong>4 months</strong>
-                </div>
-            </div>
+        </div>
 
-            <!--
-            <a href="https://giahur.itch.io/ursa-magus" class="button" target="_blank"><i
-                    class="fa-solid fa-gamepad"></i> Play</a>
-            -->
+        <div class="row">
+            <div class="half">
+                <div class="project-details">
+                    <div>
+                        <span>Role:</span>
+                        <strong>Developer</strong>
+                    </div>
+                    <div>
+                        <span>Team Size:</span>
+                        <strong>13 people</strong>
+                    </div>
+                    <div>
+                        <span>Duration:</span>
+                        <strong>4 months</strong>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span>Unreal Engine 5</span>
+                    <span>C++</span>
+                    <span>Blueprints</span>
+                    <span>Gameplay Ability System</span>
+                    <span>AI Behavior Trees</span>
+                    <span>Procedural Animation</span>
+                    <span>Physical Materials</span>
+                </div>
+            </div>
+            <div class="half">
+                <p>
+                    Play as a divine soldier. Armed with six spells themed around flesh and technology,
+                    kill three distinct enemy types to harvest enhancements.
+                </p>
+            </div>
+        </div>
+        <div class="center">
+            <img class="main-img" src="../assets/RH/RH_Collectible.webp" title="Picking up a collectible">
+        </div>
 
-            <p>Play as a divine soldier. Armed with six spells themed around flesh and technology, kill enemies to harvest enhancements.
-            </p>
-            <h3 style="text-align: center;">Responsibilities</h3>
-            <div class="info-card">
+        <h3>Responsibilities</h3>
+        <div class="info-card">
             <p>Programmer</p>
-                <ul>
-                    <li>Worked with three other developers on the development subteam. Contributed to systems architecture, AI programming, and technical documentation.</li>
-                    <li>Spells and System Architecture
-                        <ul>
-                            <li>Researched and evaluated approaches for the spell system, designing an initial architecture with a SpellManager, SpellBase, and individual spell managers.</li>
-                            <li>Researched and integrated Unreal Engine 5's Gameplay Ability System (GAS), replacing spell architecture. This reduced implementation overhead and provided built-in support for damage effects and gameplay cues.</li>
-                            <li>Wrote internal documention on GAS to onboard the rest of the development team.</li>
-                            <li>Established and documented project-wide conventions: file structure, naming conventions, and coding guidelines.</li>
-                            <li>Implemented the Flesh Wall spell: a placeable wall that expires after a set duration.</li>
-                        </ul>
-                    </li>
-                    <li>Enemy AI
-                        <ul>
-                            <li>Reviewed design team's Meatloaf behavior specification and translated it into an Unreal Engine Behavior Tree.</li>
-                            <li>Implemented Meatloaf's solo behaviors: patrolling, player detection, movement, and projectile attack.</li>
-                            <li>Researched AI formation behavior, writing documentation for the rest of the development team's reference.</li>
-                            <li>Implemented Meatloaf formation behavior: multiple Meatloafs join side-by-side, walking and attacking in formation and restructuring when needed.</li>
-                            <li>Assisted in implementing physical materials to give enemy's targeted damage zones.</li>
-                            <li>Researched and implemented procedural animation using Unreal's locomotion plugin.</li>
-                        </ul>
-                    </li>
+            <ul>
+                <li>Worked with three other developers on the development subteam. Contributed to systems architecture,
+                    AI programming, and technical documentation.</li>
+                <li>Spells and System Architecture
+                    <ul>
+                        <li>Researched and evaluated approaches for the spell system, designing an initial architecture
+                            with a SpellManager, SpellBase, and individual spell managers.</li>
+                        <li>Researched and integrated Unreal Engine 5's Gameplay Ability System (GAS), replacing spell
+                            architecture. This reduced implementation overhead, standardizing ability activation, cooldowns,
+                            gameplay effects, attributes, and cues.</li>
+                        <li>Wrote internal documentation on GAS to onboard the rest of the development team.</li>
+                        <li>Established and documented project-wide conventions: file structure, naming conventions, and
+                            coding guidelines.</li>
+                        <li>Implemented the Flesh Wall spell (a placeable wall that expires after a set duration) using GAS, including 
+                            gameplay effects, cooldown handling, collision logic and actor destruction.</li>
+                    </ul>
+                </li>
+                <li>Enemy AI
+                    <ul>
+                        <li>Reviewed design team's AI Meatloaf behavior specification and translated it into an Unreal
+                            Engine Behavior Tree.</li>
+                        <li>Implemented Meatloaf's solo behaviors: patrolling, player detection, movement, and
+                            projectile attack. Used Behavior Trees, Blackboards, and AI Controllers.</li>
+                        <li>Researched AI formation behavior, writing documentation for the rest of the development
+                            team's reference.</li>
+                        <li>Implemented Meatloaf formation behavior where nearby Meatloafs detected each other, dynamically
+                            joined into a line, maintained formation slots while navigating, reassigned positions when members
+                            died or new Meatloafs were detected, and synchronized attacks.</li>
+                        <li>Assisted in implementing physical materials to give enemy's targeted damage zones.</li>
+                        <li>Researched and implemented procedural animation using Unreal's locomotion plugin.</li>
+                    </ul>
+                </li>
 
-                </ul>
-            </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dwwXvEhX58o?si=-GSPjqfN0EVu0GEH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            <h3>Process</h3>
-            <span>
-                Interlinked is a 3D first-person action game built in Unreal Engine 5. This project was built across three milestones as part of a graduate-level game production course.
-                Players could cast six spells including Digitize, Volt Cascade, Life Dash, Contagion, Flesh Wall, and Lockjaw. Levels were populated with three enemy archetypes: CCG, Torture Nexus, and Meatloaf. 
-                The fnal deliverable was a playable demo that served as a tutorial level, introducing the spells, enemies, and enhancement system.
-            </span>
-            <div>
-                <img class="ls" src="../assets/SM/SM_LightDiagram.webp" title="Light mechanic concepts">
-                <img class="ls" src="../assets/SM/SM_ShadowDiagram.webp" title="Light mechanic concepts">
-                <img class="ls" src="../assets/SM/SM_Flag.webp" title="Moving the light to form the flag">
-            </div>
-                Milestone 1: Core Loop and Scoping. The team entered this course with a very ambitious scope. We had initially planned for six enemies, six spells, and multiple levels. 
-                After discussion with the 3D artists, this was cut down to 3 enemies. The development team was able to implement all six spells in this milestone, setting up the architecture
-                with the GAS framework. This included gameplay tags, gameplay effects, gameplay cues, and gameplay attributes. 
-            </span>
-            <div>
-                <img class="ls" src="../assets/SM/SM_ShadyPartOfMe.webp" title="Shady Part of Me">
-                <img class="ls" src="../assets/SM/SM_Contrast.webp" title="Contrast">
-                <img class="ls" src="../assets/SM/SM_Mario.webp" title="Super Mario Bros.">
-                <img class="ls" src="../assets/SM/SM_Moodboard.webp" title="Visual Moodboard">
-            </div>
-            <span>
-                Milestone 2: AI Solo Behaviors and Playtest Feedback. In this milestone, we began conducting playtests and implementing feedback. This included spell onboarding,
-                pacing, level design, and UI issues. In this milestone, the development team pivoted to implementing the AI enemies' behavior trees based on the design team's descriptions.
-            </span>
-            <div>
-                <img style="display: block;" src="../assets/SM/SM_Act1.webp" title="Act 1">
-                <img style="display: block;" src="../assets/SM/SM_Act2.webp" title="Act 2">
-                <img style="display: block;" src="../assets/SM/SM_Act3.webp" title="Act 3">
-                <img style="display: block;" src="../assets/SM/SM_Act4.webp" title="Act 4">
-            </div>
-            <span>
-               Milestone 3: AI Group Behaviors, Polish, and Integration. In the final milestone, the team focused on polishing the game through whiteboxing and bug fixes. The development
-               team continued to focus on AI behavior trees, now focusing on group behavior. This meant formations within enemy factions, as well as enemy affiliations with each other. 
-               We also implemented all models and animations for the player, spells, and enemies.
-            </span>
+            </ul>
+        </div>
+        <h3>Process</h3>
+        <div class="info-card">
+            <p>
+                Interlinked is a 3D first-person action game built in Unreal Engine 5. This project was built across
+                three milestones as part of a graduate-level game production course. Players could cast six spells 
+                including Digitize, Volt Cascade, Life Dash, Contagion, Flesh Wall, and Lockjaw. Levels were populated 
+                with three enemy archetypes: CCG, Torture Nexus, and Meatloaf. The final deliverable was a playable demo 
+                that served as a tutorial level, introducing the spells, enemies, and enhancement system.
+            </p>
+        </div>
+        <div class="info-card">
+            <p>Milestone 1: Core Loop and Scoping</p>
+            <p>
+                The team entered this course with a very ambitious scope. We had initially planned for six enemies, 
+                six spells, and multiple levels. After discussion with the 3D artists, this was cut down to 3 enemies. 
+                The development team was able to implement all six spells in this milestone, setting up the architecture
+                with the GAS framework. This included gameplay tags, gameplay effects, gameplay cues, and gameplay
+                attributes.
+            </p>
+        </div>
+        <div class="info-card">
+            <p>Milestone 2: AI Solo Behaviors and Playtest Feedback</p>
+            <p>
+                In this milestone, we began conducting playtests and implementing feedback. This included spell onboarding,
+                pacing, level design, and UI issues. In this milestone, the development team pivoted to implementing the
+                AI enemies' behavior trees based on the design team's descriptions.
+            </p>
+        </div>
+        <div class="info-card">
+            <p>Milestone 3: AI Group Behaviors, Polish, and Integration</p>
+            <p>
+                In the final milestone, the team focused on polishing the game through whiteboxing and bug fixes. 
+                The development team continued to focus on AI behavior trees, now focusing on group behavior. This 
+                meant formations within enemy factions, as well as enemy affiliations with each other. We also implemented 
+                all models and animations for the player, spells, and enemies.
+            </p>
         </div>
     </div>
 </body>
