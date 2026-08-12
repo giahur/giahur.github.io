@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="center">
-            <img class="main-img" src="../assets/RH/RH_Collectible.webp" title="Picking up a collectible">
+            <img class="main-img" src="../assets/IL/IL_LifeDash.webp" title="Interlinked Clip">
         </div>
 
         <h3>Responsibilities</h3>
@@ -91,12 +91,14 @@
                         <li>Researched and evaluated approaches for the spell system, designing an initial architecture
                             with a SpellManager, SpellBase, and individual spell managers.</li>
                         <li>Researched and integrated Unreal Engine 5's Gameplay Ability System (GAS), replacing spell
-                            architecture. This reduced implementation overhead, standardizing ability activation, cooldowns,
+                            architecture. This reduced implementation overhead, standardizing ability activation,
+                            cooldowns,
                             gameplay effects, attributes, and cues.</li>
                         <li>Wrote internal documentation on GAS to onboard the rest of the development team.</li>
                         <li>Established and documented project-wide conventions: file structure, naming conventions, and
                             coding guidelines.</li>
-                        <li>Implemented the Flesh Wall spell (a placeable wall that expires after a set duration) using GAS, including 
+                        <li>Implemented the Flesh Wall spell (a placeable wall that expires after a set duration) using
+                            GAS, including
                             gameplay effects, cooldown handling, collision logic and actor destruction.</li>
                     </ul>
                 </li>
@@ -108,8 +110,10 @@
                             projectile attack. Used Behavior Trees, Blackboards, and AI Controllers.</li>
                         <li>Researched AI formation behavior, writing documentation for the rest of the development
                             team's reference.</li>
-                        <li>Implemented Meatloaf formation behavior where nearby Meatloafs detected each other, dynamically
-                            joined into a line, maintained formation slots while navigating, reassigned positions when members
+                        <li>Implemented Meatloaf formation behavior where nearby Meatloafs detected each other,
+                            dynamically
+                            joined into a line, maintained formation slots while navigating, reassigned positions when
+                            members
                             died or new Meatloafs were detected, and synchronized attacks.</li>
                         <li>Assisted in implementing physical materials to give enemy's targeted damage zones.</li>
                         <li>Researched and implemented procedural animation using Unreal's locomotion plugin.</li>
@@ -120,40 +124,117 @@
         </div>
         <h3>Process</h3>
         <div class="info-card">
-            <p>
-                Interlinked is a 3D first-person action game built in Unreal Engine 5. This project was built across
-                three milestones as part of a graduate-level game production course. Players could cast six spells 
-                including Digitize, Volt Cascade, Life Dash, Contagion, Flesh Wall, and Lockjaw. Levels were populated 
-                with three enemy archetypes: CCG, Torture Nexus, and Meatloaf. The final deliverable was a playable demo 
-                that served as a tutorial level, introducing the spells, enemies, and enhancement system.
-            </p>
+            <p>Overview</p>
+            <section>
+                <p>
+                    Interlinked is a 3D first-person action game built in Unreal Engine 5. This project was built across
+                    three milestones as part of a graduate-level game production course. Players could cast six spells
+                    including Digitize, Volt Cascade, Life Dash, Contagion, Flesh Wall, and Lockjaw. Levels were
+                    populated
+                    with three enemy archetypes: CCG, Torture Nexus, and Meatloaf. The final deliverable was a playable
+                    demo
+                    that served as a tutorial level, introducing the spells, enemies, and enhancement system.
+                </p>
+            </section>
         </div>
         <div class="info-card">
             <p>Milestone 1: Core Loop and Scoping</p>
-            <p>
-                The team entered this course with a very ambitious scope. We had initially planned for six enemies, 
-                six spells, and multiple levels. After discussion with the 3D artists, this was cut down to 3 enemies. 
-                The development team was able to implement all six spells in this milestone, setting up the architecture
-                with the GAS framework. This included gameplay tags, gameplay effects, gameplay cues, and gameplay
-                attributes.
-            </p>
+            <section>
+                <div class="image right">
+                    <img src="../assets/IL/IL_Spells1.webp" title="Spells iteration 1">
+                </div>
+                <div class="text">
+                    <p>
+                        The team entered this course with a very ambitious scope. We had initially planned for six
+                        enemies, six spells, and multiple levels. After discussion with the 3D artists, this was cut
+                        down to 3 enemies. I, along with the rest of the development team, was responsible for the six
+                        spells. At first, we set up SpellBase as a parent class to the 6 spells.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="text right">
+                    <p>
+                        However, the team ran into issues where spells needed one blueprint to hold its initial logic
+                        and a separate blueprint for its static mesh. This led us to instead create a manager for each
+                        of the spells, which were in turn children of the SpellManager. The managers then call the
+                        static mesh of the spells. This solution was messy, and each individual spell manager had to
+                        call the parent SpellManager, repeatedly calling logic unnecessarily for each individual spell.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="../assets/IL/IL_Spells2.webp" title="Spells iteration 2">
+                </div>
+            </section>
+            <section>
+                <div class="image right">
+                    <img src="../assets/IL/IL_FleshWall_Final.webp" title="Flesh Wall">
+                </div>
+                <div class="text">
+                    <p>
+                        After doing some research, we decided to use Unreal Engine 5's Gameplay Ability System (GAS).
+                        This reduced implementation overhead, standardizing ability activation, cooldowns, gameplay
+                        effects, attributes, and cues. I wrote internal documentation to onboard the rest of the
+                        development team. I also implemented the Flesh Wall spell. This spell was a placeable wall that
+                        expired after a set duration. The spell was implemented using gameplay effects, tags, cues, and
+                        attributes as well as cooldown handling, collision logic and actor destruction.
+                    </p>
+                </div>
+            </section>
         </div>
+
         <div class="info-card">
-            <p>Milestone 2: AI Solo Behaviors and Playtest Feedback</p>
-            <p>
-                In this milestone, we began conducting playtests and implementing feedback. This included spell onboarding,
-                pacing, level design, and UI issues. In this milestone, the development team pivoted to implementing the
-                AI enemies' behavior trees based on the design team's descriptions.
-            </p>
+            <p>Milestone 2: AI Solo Behaviors</p>
+            <section>
+                <div class="image right">
+                    <img src="../assets/IL/IL_Meatloaf_Solo.webp" title="Meatloaf solo behavior">
+                </div>
+                <div class="text">
+                    <p>
+                        In this milestone, the development team began implementing the AI enemies based on the design
+                        team's
+                        specifications. I began with the enemy Meatloaf, a tank-like creature with slow movement and
+                        projectiles. When alone, the enemy patrols the area for the player, pursuing and repeatedly
+                        shooting the
+                        player upon seeing or hearing them. These behaviors were implemented using behavior trees and AI
+                        perception. The large plates on Meatloaf's torso protect the front and back, leaving him
+                        vulnerable on
+                        the sides. This was implemented with Unreal Engine's Physical Materials.
+                    </p>
+                </div>
+            </section>
         </div>
+
         <div class="info-card">
-            <p>Milestone 3: AI Group Behaviors, Polish, and Integration</p>
-            <p>
-                In the final milestone, the team focused on polishing the game through whiteboxing and bug fixes. 
-                The development team continued to focus on AI behavior trees, now focusing on group behavior. This 
-                meant formations within enemy factions, as well as enemy affiliations with each other. We also implemented 
-                all models and animations for the player, spells, and enemies.
-            </p>
+            <p>Milestone 3: AI Group Behaviors and Polish</p>
+            <section>
+                <div class="image right">
+                    <img src="../assets/IL/IL_Meatloaf_Form.webp" title="Meatloaf group behavior, beginning iteration">
+                </div>
+                <div class="text">
+                    <p>
+                        In the final milestone, the development continued working on AI behavior trees, now focusing on
+                        group behavior. When Meatloafs see each other, they will assign the centermost one as the
+                        leader. The other Meatloafs will then form a line, flanking the leader Meatloaf. Then, as a
+                        unit, the Meatloafs will patrol and chase the player. If Meatloafs encounter another of their
+                        kind or one in formation dies, they will send a signal to the leader to reform the group.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="text right">
+                    <p>
+                        The team also focused on polishing the game through whiteboxing and bug fixes. After AI enemy
+                        group behaviors were finalized, we began coding formations across enemny factions, as well as
+                        enemy affiliations with each other. We also implemented all models, materials, and animations
+                        for the player, spells, and enemies.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="../assets/IL/IL_Meatloaf_Form_Final.webp"
+                        title="Meatloaf group behavior, final iteration">
+                </div>
+            </section>
         </div>
     </div>
 </body>
