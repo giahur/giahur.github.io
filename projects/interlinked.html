@@ -48,7 +48,7 @@
                 <div class="project-details">
                     <div>
                         <span>Role:</span>
-                        <strong>Developer</strong>
+                        <strong>Gameplay and AI Developer</strong>
                     </div>
                     <div>
                         <span>Team Size:</span>
@@ -82,10 +82,10 @@
 
         <h3>Responsibilities</h3>
         <div class="info-card">
-            <p>Programmer</p>
+            <p>Gameplay Developer</p>
             <ul>
-                <li>Worked with three other developers on the development subteam. Contributed to systems architecture,
-                    AI programming, and technical documentation.</li>
+                <li>Worked with three other developers on the development subteam. Contributed to systems architecture
+                    and technical documentation.</li>
                 <li>Spells and System Architecture
                     <ul>
                         <li>Researched and evaluated approaches for the spell system, designing an initial architecture
@@ -102,24 +102,28 @@
                             gameplay effects, cooldown handling, collision logic and actor destruction.</li>
                     </ul>
                 </li>
-                <li>Enemy AI
+                <li>Enemies
                     <ul>
-                        <li>Reviewed design team's AI Meatloaf behavior specification and translated it into an Unreal
-                            Engine Behavior Tree.</li>
-                        <li>Implemented Meatloaf's solo behaviors: patrolling, player detection, movement, and
-                            projectile attack. Used Behavior Trees, Blackboards, and AI Controllers.</li>
-                        <li>Researched AI formation behavior, writing documentation for the rest of the development
-                            team's reference.</li>
-                        <li>Implemented Meatloaf formation behavior where nearby Meatloafs detected each other,
-                            dynamically
-                            joined into a line, maintained formation slots while navigating, reassigned positions when
-                            members
-                            died or new Meatloafs were detected, and synchronized attacks.</li>
                         <li>Assisted in implementing physical materials to give enemy's targeted damage zones.</li>
                         <li>Researched and implemented procedural animation using Unreal's locomotion plugin.</li>
                     </ul>
                 </li>
-
+            </ul>
+        </div>
+        <div class="info-card">
+            <p>AI Developer</p>
+            <ul>
+                <li>Reviewed design team's AI Meatloaf behavior specification and translated it into an Unreal
+                    Engine Behavior Tree.</li>
+                <li>Implemented Meatloaf's solo behaviors: patrolling, player detection, movement, and
+                    projectile attack. Used Behavior Trees, Blackboards, and AI Controllers.</li>
+                <li>Researched AI formation behavior, writing documentation for the rest of the development
+                    team's reference.</li>
+                <li>Implemented Meatloaf formation behavior where nearby Meatloafs detected each other,
+                    dynamically
+                    joined into a line, maintained formation slots while navigating, reassigned positions when
+                    members
+                    died or new Meatloafs were detected, and synchronized attacks.</li>
             </ul>
         </div>
         <h3>Process</h3>
@@ -130,10 +134,9 @@
                     Interlinked is a 3D first-person action game built in Unreal Engine 5. This project was built across
                     three milestones as part of a graduate-level game production course. Players could cast six spells
                     including Digitize, Volt Cascade, Life Dash, Contagion, Flesh Wall, and Lockjaw. Levels were
-                    populated
-                    with three enemy archetypes: CCG, Torture Nexus, and Meatloaf. The final deliverable was a playable
-                    demo
-                    that served as a tutorial level, introducing the spells, enemies, and enhancement system.
+                    populated with three enemy archetypes: CCG, Torture Nexus, and Meatloaf. The final deliverable was a
+                    playable demo that served as a tutorial level, introducing the spells, enemies, and enhancement
+                    system.
                 </p>
             </section>
         </div>
@@ -186,25 +189,41 @@
         <div class="info-card">
             <p>Milestone 2: AI Solo Behaviors</p>
             <section>
+                <p>In this milestone, the development team began implementing the AI enemies based on the design
+                    team's specifications.</p>
                 <div class="image right">
                     <img src="../assets/IL/IL_Meatloaf_Solo.webp" title="Meatloaf solo behavior">
                 </div>
                 <div class="text">
                     <p>
-                        In this milestone, the development team began implementing the AI enemies based on the design
-                        team's
-                        specifications. I began with the enemy Meatloaf, a tank-like creature with slow movement and
-                        projectiles. When alone, the enemy patrols the area for the player, pursuing and repeatedly
-                        shooting the
-                        player upon seeing or hearing them. These behaviors were implemented using behavior trees and AI
-                        perception. The large plates on Meatloaf's torso protect the front and back, leaving him
-                        vulnerable on
-                        the sides. This was implemented with Unreal Engine's Physical Materials.
+                        I began with the enemy Meatloaf, a tank-like creature with slow movement
+                        and projectiles. When alone, the enemy patrols the area for the player, pursuing and repeatedly
+                        shooting the player upon seeing or hearing them. These behaviors were implemented using behavior
+                        trees and AI perception. The large plates on Meatloaf's torso protect the front and back,
+                        leaving him vulnerable on the sides. This was implemented with Unreal Engine's Physical
+                        Materials.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="text right">
+                    <p>
+                        Next, I assisted with the movement animations for the Torture Nexus (TN) enemy. This enemy is
+                        made up of a toso and head on top of spider-like mechanical legs. It is constantly in pain,
+                        represented by its erratic movements. Originally, our 3D artists had intended on creating the
+                        animations for all enemies. However, TN's frantic walking and ability to move in all directions
+                        proved to be difficult to implement. After some
+                        research, the team determined that this would be best implemented using Procedural Animation
+                        with a Locomotor. In the enemy's Control Rig, I combined the Locomotor to generate pelvis motion
+                        with Full Body IK to generate leg poses.
+                        After adjusting the Phase Offset, Movement and Stepping Tuning, and collisions, we were able to
+                        create a walking animation for TN that aligned with its creepy, crawly design.
+                        TN may also jump to the ceiling to attack the player. With some adjustments, the locomotor was
+                        able to procedurally animate the legs so that TN appeared to be climbing to the ceiling.
                     </p>
                 </div>
             </section>
         </div>
-
         <div class="info-card">
             <p>Milestone 3: AI Group Behaviors and Polish</p>
             <section>
@@ -217,7 +236,8 @@
                         group behavior. When Meatloafs see each other, they will assign the centermost one as the
                         leader. The other Meatloafs will then form a line, flanking the leader Meatloaf. Then, as a
                         unit, the Meatloafs will patrol and chase the player. If Meatloafs encounter another of their
-                        kind or one in formation dies, they will send a signal to the leader to reform the group.
+                        kind or one in formation dies, they will send a signal to the leader to reform the group. To
+                        see the detailed Blueprints, see the "Code" section below.
                     </p>
                 </div>
             </section>
@@ -235,6 +255,10 @@
                         title="Meatloaf group behavior, final iteration">
                 </div>
             </section>
+        </div>
+        <h3>Code</h3>
+        <div class="info-card">
+
         </div>
     </div>
 </body>
