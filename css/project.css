@@ -46,14 +46,14 @@ section {
 .right {
     float: right;
 }
-.image {
+.text-area {
+    width: 58%;
+}
+.image-area {
     width: 40%;
 }
 img {
     width: 100%;
-}
-.text {
-    width: 58%;
 }
 
 /* tech stack */
