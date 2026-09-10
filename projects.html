@@ -3,7 +3,9 @@
 
 <head>
     <title>projects</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/allprojects.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -11,62 +13,75 @@
 <body>
     <header>
         <nav>
-            <div class="logo">GH</div>
+            <img src="./assets/gia.svg">
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul>
-                <li><a href="/index">Home</a></li>
-                <li><a href="./projects">Projects</a></li>
+                <li><a href="./index">Home</a></li>
+                <li><a href="./projects" class="active">Projects</a></li>
                 <li><a href="./education">Education</a></li>
                 <li><a href="./hobbies">Hobbies</a></li>
                 <li><a href="./contact">Contact Me</a></li>
             </ul>
             <div class="icons">
-                <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/giahur" target="_blank" class="icon-link"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/giahur" target="_blank" class="icon-link">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+                <a href="https://giahur.itch.io/" target="_blank" class="icon-link">
+                    <i class="fa-brands fa-itch-io"></i>
+                </a>
+            </div>
+            <div>
+                ©2026 Gia Hur
             </div>
         </nav>
     </header>
 
     <div class="container">
         <h2>Projects</h2>
-        <h3>Games </h3>
-        <div class="projects-grid games-grid">
-
-      <!--
-            <a href="./projects/crawdads.html" class="project-card">
-                <img src="./assets/RH/RH_Diary.png">
+        <h3>Gameplay Programming</h3>
+        <div class="projects-grid">
+            <a href="./projects/interlinked.html" class="project-card">
+                <div class="img-container">
+                    <img src="./assets/IL/IL_Cover.webp">
+                    <img class="replace-img" src="../assets/IL/IL_LifeDash.webp" title="Interlinked Clip">
+                </div>
                 <div class="project-info">
-                    <h3>Crawdads</h3>
-                    <p>Analog dress-up game</p>
+                    <h3>Interlinked</h3>
+                    <p>3-D first-person action game</p>
 
                     <div class="project-details">
                         <div>
                             <span>Role:</span>
-                            <strong>Designer, Artist</strong>
+                            <strong>Gameplay, AI Developer</strong>
                         </div>
                         <div>
                             <span>Team Size:</span>
-                            <strong>4 people</strong>
+                            <strong>13 people</strong>
                         </div>
                         <div>
                             <span>Duration:</span>
-                            <strong>7 weeks</strong>
+                            <strong>4 months</strong>
                         </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Unreal Engine 5</span>
+                        <span>Blueprints</span>
+                        <span>C++</span>
+                        <span>Gameplay Ability System</span>
                     </div>
                 </div>
             </a>
-        -->
-
             <a href="./projects/restoringhope.html" class="project-card">
-                <img src="./assets/RH/RH_Diary.webp">
+                <div class="img-container">
+                    <img src="./assets/RH/RH_Diary.webp">
+                    <img class="replace-img" src="./assets/RH/RH_Collectible.webp" title="Picking up a collectible">
+                </div>
                 <div class="project-info">
                     <h3>Restoring Hope</h3>
                     <p>2-D narrative-driven pixel puzzle game</p>
-
-                    <div class="tech-stack">
-                        <span>Unity</span>
-                        <span>C#</span>
-                    </div>
 
                     <div class="project-details">
                         <div>
@@ -82,24 +97,23 @@
                             <strong>3 months</strong>
                         </div>
                     </div>
-                </div>
-            </a>
-
-            <a href="./projects/pizzasaucer.html" class="project-card">
-                <img src="../assets/PS/PS_Title.webp">
-                <div class="project-info">
-                    <h3>Pizza Saucer</h3>
-                    <p>2-D pizza-making simulator game</p>
-
                     <div class="tech-stack">
                         <span>Unity</span>
                         <span>C#</span>
                     </div>
+                </div>
+            </a>
+
+            <a href="./projects/pizzasaucer.html" class="project-card">
+                <img src="./assets/PS/PS_Title.webp">
+                <div class="project-info">
+                    <h3>Pizza Saucer</h3>
+                    <p>2-D pizza-making simulator game</p>
 
                     <div class="project-details">
                         <div>
                             <span>Role:</span>
-                            <strong>Producer, Developer</strong>
+                            <strong>Producer, Gameplay Developer</strong>
                         </div>
                         <div>
                             <span>Team Size:</span>
@@ -110,109 +124,26 @@
                             <strong>3 months</strong>
                         </div>
                     </div>
-                </div>
-            </a>
-
-            <a href="./projects/stargazing.html" class="project-card">
-                <img src="./assets/SG/SG_Home.webp">
-                <div class="project-info">
-                    <h3>Stargazing</h3>
-                    <p>2-D narrative prototype about coming out</p>
-
-                    <div class="tech-stack">
-                        <span>Godot</span>
-                        <span>C#</span>
-                        <span>GDScript</span>
-                    </div>
-
-                    <div class="project-details">
-                        <div>
-                            <span>Role:</span>
-                            <strong>Designer</strong>
-                        </div>
-                        <div>
-                            <span>Team Size:</span>
-                            <strong>5 people</strong>
-                        </div>
-                        <div>
-                            <span>Duration:</span>
-                            <strong>3 weeks</strong>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="./projects/shadowmagic.html" class="project-card">
-                <img src="./assets/SM/SM_Title.webp">
-                <div class="project-info">
-                    <h3>Shadow Magic</h3>
-                    <p>2-D shadow platformer prototype</p>
-
                     <div class="tech-stack">
                         <span>Unity</span>
                         <span>C#</span>
                     </div>
-
-                    <div class="project-details">
-                        <div>
-                            <span>Role:</span>
-                            <strong>Developer</strong>
-                        </div>
-                        <div>
-                            <span>Team Size:</span>
-                            <strong>5 people</strong>
-                        </div>
-                        <div>
-                            <span>Duration:</span>
-                            <strong>3 weeks</strong>
-                        </div>
-                    </div>
                 </div>
             </a>
-<!--
-            <a href="./projects/areafreakyone.html" class="project-card">
-                <img src="./assets/RH/RH_Diary.png">
-                <div class="project-info">
-                    <h3>Area Freaky One</h3>
-                    <p>Chaotic jam game with rapid-fire microgames</p>
+        </div>
 
-                    <div class="tech-stack">
-                        <span>Unity</span>
-                        <span>C#</span>
-                    </div>
+        <h3>UI Programming</h3>
+        <div class="projects-grid">
+            <a href="./projects/configura.html" class="project-card">
+                <img src="./assets/RH/RH_Diary.webp">
+                <div class="project-info">
+                    <h3>Configura</h3>
+                    <p>Character creator creation plugin</p>
 
                     <div class="project-details">
                         <div>
                             <span>Role:</span>
-                            <strong>Developer, Artist</strong>
-                        </div>
-                        <div>
-                            <span>Team Size:</span>
-                            <strong>11 people</strong>
-                        </div>
-                        <div>
-                            <span>Duration:</span>
-                            <strong>3 days</strong>
-                        </div>
-                    </div>
-                </div>
-            </a>
-  
-            <a href="./projects/artifactsofthepast.html" class="project-card">
-                <img src="./assets/RH/RH_Diary.png">
-                <div class="project-info">
-                    <h3>Artifacts of the Past</h3>
-                    <p>2-D puzzle platformer</p>
-
-                    <div class="tech-stack">
-                        <span>Unity</span>
-                        <span>C#</span>
-                    </div>
-
-                    <div class="project-details">
-                        <div>
-                            <span>Role:</span>
-                            <strong>Developer</strong>
+                            <strong>UI, Backend Developer</strong>
                         </div>
                         <div>
                             <span>Team Size:</span>
@@ -220,24 +151,91 @@
                         </div>
                         <div>
                             <span>Duration:</span>
-                            <strong>1 month</strong>
+                            <strong>3 months</strong>
                         </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Godot</span>
+                        <span>GDScript</span>
                     </div>
                 </div>
             </a>
-        -->
-        </div>
-    </div>
-    <div class="container">
-        <h3>Web Development </h3>
-        <div class="projects-grid web-grid">
-            
+
+            <a href="./projects/letsgogambling.html" class="project-card">
+                <img src="./assets/RH/RH_Diary.webp">
+                <div class="project-info">
+                    <h3>Let's Go Gambling!</h3>
+                    <p>2-D casino simulator</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>UI Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>5 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>1 month</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Godot</span>
+                        <span>C#</span>
+                        <span>GDScript</span>
+                    </div>
+                </div>
+            </a>
+            <a href="./projects/ohfthecake.html" class="project-card">
+                <img src="./assets/RH/RH_Diary.webp">
+                <div class="project-info">
+                    <h3>Oh F The Cake!</h3>
+                    <p>3-D co-op silly jam game</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>UI Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>5 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>48 hours</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Godot</span>
+                        <span>C#</span>
+                        <span>GDScript</span>
+                    </div>
+                </div>
+            </a>
+
             <a href="./projects/whenisgreat.html" class="project-card">
                 <img src="./assets/WIG/WIG_Welcome.webp">
                 <div class="project-info">
                     <h3>WhenIsGreat</h3>
                     <p>Scheduling browser application with Google Calendar integration</p>
 
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Frontend, UI Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>4 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>3 months</strong>
+                        </div>
+                    </div>
                     <div class="tech-stack">
                         <span>React</span>
                         <span>Spring Boot</span>
@@ -245,13 +243,21 @@
                         <span>Java</span>
                         <span>CSS</span>
                         <span>HTML</span>
-                        <span>JavaScript</span>                    
+                        <span>JavaScript</span>
                     </div>
+                </div>
+            </a>
+
+            <a href="./projects/couchmeetstable.html" class="project-card">
+                <img src="./assets/CMT/CMT_Matches.webp">
+                <div class="project-info">
+                    <h3>Couch Meets Table</h3>
+                    <p>Roommate-matching browser application</p>
 
                     <div class="project-details">
                         <div>
                             <span>Role:</span>
-                            <strong>Developer</strong>
+                            <strong>Frontend Lead, UI Developer</strong>
                         </div>
                         <div>
                             <span>Team Size:</span>
@@ -262,15 +268,6 @@
                             <strong>3 months</strong>
                         </div>
                     </div>
-                </div>
-            </a>
-       
-            <a href="./projects/couchmeetstable.html" class="project-card">
-                <img src="./assets/CMT/CMT_Matches.webp">
-                <div class="project-info">
-                    <h3>Couch Meets Table</h3>
-                    <p>Roommate-matching browser application</p>
-
                     <div class="tech-stack">
                         <span>Django</span>
                         <span>MySQL</span>
@@ -278,21 +275,6 @@
                         <span>Python</span>
                         <span>HTML</span>
                         <span>CSS</span>
-                    </div>
-
-                    <div class="project-details">
-                        <div>
-                            <span>Role:</span>
-                            <strong>Frontend Lead, Developer</strong>
-                        </div>
-                        <div>
-                            <span>Team Size:</span>
-                            <strong>4 people</strong>
-                        </div>
-                        <div>
-                            <span>Duration:</span>
-                            <strong>3 months</strong>
-                        </div>
                     </div>
                 </div>
             </a>
@@ -303,18 +285,10 @@
                     <h3>Ultimate</h3>
                     <p>Browser application to play Ultimate Tic-Tac-Toe</p>
 
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>JavaScript</span>
-                        <span>CSS</span>
-                        <span>TypeScript</span>
-                        <span>HTML</span>
-                    </div>
-
                     <div class="project-details">
                         <div>
                             <span>Role:</span>
-                            <strong>Developer</strong>
+                            <strong>Solo Developer</strong>
                         </div>
                         <div>
                             <span>Team Size:</span>
@@ -325,53 +299,136 @@
                             <strong>2 weeks</strong>
                         </div>
                     </div>
-                </div>
-            </a>
-      
-            <a href="./projects/todolist.html" class="project-card">
-                <img src="./assets/TDL/TDL_Header.webp">
-                <div class="project-info">
-                    <h3>To-Do List</h3>
-                    <p>Dynamic system for users to add, update, and delete tasks</p>
-
                     <div class="tech-stack">
                         <span>React</span>
                         <span>JavaScript</span>
                         <span>CSS</span>
                         <span>TypeScript</span>
                         <span>HTML</span>
-                    </div>
-
-                    <div class="project-details">
-                        <div>
-                            <span>Role:</span>
-                            <strong>Developer</strong>
-                        </div>
-                        <div>
-                            <span>Team Size:</span>
-                            <strong>1 person</strong>
-                        </div>
-                        <div>
-                            <span>Duration:</span>
-                            <strong>2 weeks</strong>
-                        </div>
                     </div>
                 </div>
             </a>
         </div>
+
+        <span id="more">
+            <h3>Design</h3>
+            <div class="projects-grid">
+                <a href="./projects/ursamagus.html" class="project-card">
+                    <img src="./assets/SM/SM_Header.webp">
+                    <div class="project-info">
+                        <h3>Ursa Magus</h3>
+                        <p>Turn-based stealth puzzle prototype</p>
+
+                        <div class="project-details">
+                            <div>
+                                <span>Role:</span>
+                                <strong>Level Designer, Gameplay Developer</strong>
+                            </div>
+                            <div>
+                                <span>Team Size:</span>
+                                <strong>5 people</strong>
+                            </div>
+                            <div>
+                                <span>Duration:</span>
+                                <strong>4 weeks</strong>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Unity</span>
+                            <span>C#</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="./projects/crawdads.html" class="project-card">
+                    <img src="./assets/RH/RH_Diary.webp">
+                    <div class="project-info">
+                        <h3>Crawdads</h3>
+                        <p>Analog dress-up game</p>
+
+                        <div class="project-details">
+                            <div>
+                                <span>Role:</span>
+                                <strong>Designer, 2D Artist</strong>
+                            </div>
+                            <div>
+                                <span>Team Size:</span>
+                                <strong>4 people</strong>
+                            </div>
+                            <div>
+                                <span>Duration:</span>
+                                <strong>1 month</strong>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Analog</span>
+                            <span>Procreate</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./projects/stargazing.html" class="project-card">
+                    <img src="./assets/SG/SG_Home.webp">
+                    <div class="project-info">
+                        <h3>Stargazing</h3>
+                        <p>2-D narrative prototype about coming out</p>
+
+                        <div class="project-details">
+                            <div>
+                                <span>Role:</span>
+                                <strong>Narrative Designer</strong>
+                            </div>
+                            <div>
+                                <span>Team Size:</span>
+                                <strong>5 people</strong>
+                            </div>
+                            <div>
+                                <span>Duration:</span>
+                                <strong>3 weeks</strong>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Godot</span>
+                            <span>C#</span>
+                            <span>GDScript</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./projects/areafreakyone.html" class="project-card">
+                    <img src="./assets/RH/RH_Diary.png">
+                    <div class="project-info">
+                        <h3>Area Freaky One</h3>
+                        <p>Chaotic WarioWare-style game</p>
+
+                        <div class="project-details">
+                            <div>
+                                <span>Role:</span>
+                                <strong>Level Designer, 2D Artist</strong>
+                            </div>
+                            <div>
+                                <span>Team Size:</span>
+                                <strong>11 people</strong>
+                            </div>
+                            <div>
+                                <span>Duration:</span>
+                                <strong>48 hours</strong>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Unity</span>
+                            <span>C#</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </span>
+        <div class="center">
+            <button id="moreBtn" class="button">See more</button>
+        </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggle = document.querySelector(".menu-toggle");
-            const nav = document.querySelector("nav");
-            const menu = nav.querySelector("ul");
-
-            toggle.addEventListener("click", function () {
-                menu.classList.toggle("show");
-            });
-        });
-    </script>
+    <script src="../js/allprojects.js"></script>
+    <script src="../js/nav.js"></script>
 
 </body>
 </html>
