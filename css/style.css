@@ -112,7 +112,7 @@ p, li {
     white-space: nowrap;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1030px) {
     .container {
         margin-left: 0;
         margin-right: 0;
