@@ -53,9 +53,10 @@ p, li {
 
 /* == CONTENT CONTAINERS == */
 .container {
+    --side-margin: clamp(0px, (40vw - 400px), 200px);
     margin-top: 20px;
-    margin-right: clamp(0px, 10%, 200px);
-    margin-left: clamp(300px, 25%, 500px);
+    margin-right: var(--side-margin);
+    margin-left: calc(300px + var(--side-margin));
     padding: 2vw;
     box-sizing: border-box;
 }
@@ -90,7 +91,7 @@ p, li {
     transform: scale(1.05);
 }
 
-/* tech stack */
+/* == TECH STACK PILLS BUTTONS == */
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -109,4 +110,12 @@ p, li {
     background: var(--accent-color);
 
     white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 6rem;
+    }
 }
