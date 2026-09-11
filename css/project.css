@@ -101,3 +101,12 @@ img {
 .info-card {
     margin-top: 20px;
 }
+
+@media (max-width: 1000px) {
+    .left, .right {
+        clear: both;
+    }
+    .text-area, .image-area {
+        width: 100%;
+    }
+}
