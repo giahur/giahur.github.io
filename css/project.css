@@ -15,9 +15,13 @@ h3 {
     margin-top: 30px;
     text-align: center;
 }
+p, li {
+    font-size: clamp(1.1rem, 1.1vw, 1.2rem);
+}
 .row {
     display: flex;
     margin: 15px 10px;
+    gap: 20px;
 }
 .half {
     flex: 50%;
@@ -35,6 +39,7 @@ h3 {
 .main-img {
     width: 70%;
 }
+
 /* content */
 section {
     clear: both;
@@ -46,11 +51,14 @@ section {
 .right {
     float: right;
 }
-.text-area {
+.maj-area {
     width: 58%;
 }
-.image-area {
+.min-area {
     width: 40%;
+}
+.half-img {
+    width: 49%;
 }
 img {
     width: 100%;
@@ -106,7 +114,10 @@ img {
     .left, .right {
         clear: both;
     }
-    .text-area, .image-area {
+    .maj-area, .min-area {
         width: 100%;
+    }
+    .row {
+        flex-wrap: wrap;
     }
 }
