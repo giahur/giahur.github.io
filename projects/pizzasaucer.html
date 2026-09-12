@@ -47,7 +47,7 @@
                 <div class="project-details">
                     <div>
                         <span>Role:</span>
-                        <strong>Producer, Developer, Designer</strong>
+                        <strong>Producer, Gameplay and UI Developer</strong>
                     </div>
                     <div>
                         <span>Team Size:</span>
@@ -75,18 +75,22 @@
         <div class="center" style="flex-direction: row;">
             <a href="https://giahur.itch.io/pizza-saucer" class="button" target="_blank"><i
                     class="fa-solid fa-gamepad"></i> Play</a>
+            <a href="../assets/PS/PizzaSaucer_GDD.pdf" class="button" target="_blank"><i
+                    class="fa-regular fa-file-lines"></i> Design Doc</a>
         </div>
         <div class="center">
-            <img class="main-img" src="../assets/RH/RH_Collectible.webp" title="Picking up a collectible">
+            <img src="../assets/PS/PS_Clue.webp" title="Player receiving clues that auto-populate the map.">
         </div>
 
         <h3>Responsibilities</h3>
         <div class="info-card">
             <p>Producer</p>
             <ul>
-                <li>Led a 5-person interdisciplinary game team through a full semester production cycle using Agile sprints.
+                <li>Led a 5-person interdisciplinary game team through a full semester production cycle using Agile
+                    sprints.
                 </li>
-                <li>Handled task management, scheduling, workflow, and scope control using Codecks and weekly milestones.
+                <li>Handled task management, scheduling, workflow, and scope control using Codecks and weekly
+                    milestones.
                 </li>
                 <li>Managed risk mitigation (design scope, sound production, onboarding).</li>
                 <li>Facilitated team communication via Discord, Google Drive, and weekly sprint reviews.</li>
@@ -94,7 +98,7 @@
             </ul>
         </div>
         <div class="info-card">
-            <p>Developer and Designer</p>
+            <p>Gameplay and UI Developer</p>
             <ul>
                 <li>Developed core systems in Unity (C#), including:
                     <ul>
@@ -107,15 +111,46 @@
                 <li>Codesigned game narrative, tying dialogue clues to gameplay mechanics and map progression.</li>
             </ul>
         </div>
-        
-        <img class="ls" src="../assets/PS/PS_CookServe.webp"
-            title="Player cooking and serving pizza to an alien customer.">
-        <img class="ls" src="../assets/PS/PS_Interaction.webp"
-            title="Player speaking to NPCs and receiving information that auto-populate in recipe book.">
-        <img class="ls" src="../assets/PS/PS_Clue.webp"
-            title="Player speaking to NPCs and receiving clues that auto-populate the map.">
-        <img class="ls" src="../assets/PS/PS_Travel.webp"
-            title="Player traveling to other planets to find their way home.">
+
+        <h3>Process</h3>
+        <div class="info-card">
+            <p>Cooking Mechanic</p>
+            <section>
+                <div class="min-area right">
+                    <img src="../assets/PS/PS_CookServe.webp"
+                        title="Player cooking and serving pizza to an alien customer.">
+                </div>
+                <div class="maj-area left">
+                    <p>
+                        As gameplay developer, I worked on the pizza mechanic. This included adding toppings to the
+                        pizza, cooking it in the oven (with pizza state transitions), and serving it to the customer.
+                        After playtests, we received feedback that the drag-and-drop mechanic was tedious, so this was
+                        switched to clicking on the topping bin and placing the toppings until right-click.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="info-card">
+            <p>Recipe Book System</p>
+            <section>
+                <div class="min-area right">
+                    <img src="../assets/PS/PS_Interaction.webp"
+                        title="Player speaking to NPCs and receiving information that auto-populate in recipe book.">
+                </div>
+                <div class="maj-area left">
+                    <p>
+                        Additionally, one of my main focuses was the recipe book UI. Players could look through the
+                        recipe book to see descriptions of each ingredient in order to find which one a customer might
+                        prefer. When players combine ingredients, the customer may return and inform the player about
+                        the new flavor profile that this creates. The recipe book will show a red dot to indicate that 
+                        new information has been added, and the unique combination is programmatically added to the book.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+
+        <img src="../assets/PS/PS_Travel.webp" title="Player traveling to other planets to find their way home.">
     </div>
     </div>
     <script src="../js/nav.js"></script>
