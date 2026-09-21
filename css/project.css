@@ -60,7 +60,10 @@ section {
 .half-img {
     width: 49%;
 }
-img {
+iframe {
+    aspect-ratio: 16 / 9;
+}
+img, iframe {
     width: 100%;
 }
 
