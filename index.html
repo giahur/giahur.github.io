@@ -5,6 +5,7 @@
     <title>about me</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="./css/allprojects.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -12,14 +13,14 @@
 <body>
     <header>
         <nav>
-            <a href="/index"><img class="logo" src="/assets/gia.svg" title="Made by my friend Katelyn Park @katpar.art"></a>
+            <a href="/index"><img class="logo" src="/assets/gia.svg"
+                    title="Made by my friend Katelyn Park @katpar.art"></a>
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul>
                 <li><a href="/" class="active">Home</a></li>
-                <li><a href="./projects">Projects</a></li>
-                <li><a href="./education">Education</a></li>
-                <li><a href="./hobbies">Hobbies</a></li>
-                <li><a href="./contact">Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#about_me">About Me</a></li>
             </ul>
             <div class="icons">
                 <a href="https://www.linkedin.com/in/giahur/" target="_blank" class="icon-link">
@@ -45,69 +46,391 @@
 
         <div>
             <a href="./contact" class="button" target="_blank"><i class="fa-regular fa-address-card"></i> Contact Me</a>
-            <a href="./assets/GiaHur_Resume.pdf" class="button" target="_blank"><i class="fa-regular fa-file-lines"></i> Resume</a>
-        </div>
-
-        <div class="info-card">
-            <h2>Skills</h2>
-            <h4>Programming Languages</h4>
-            <div class="tech-stack">
-                <span>C#</span>
-                <span>Blueprints</span>
-                <span>C++</span>
-                <span>GDScript</span>
-                <span>Python</span>
-                <span>Java</span>
-                <span>JavaScript</span>
-                <span>TypeScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
-            </div>
-            <h4>Frameworks and Libraries</h4>
-            <div class="tech-stack">
-                <span>GAS</span>
-                <span>React</span>
-                <span>Django</span>
-                <span>Bootstrap</span>
-            </div>
-            <h4>Game Engines</h4>
-            <div class="tech-stack">
-                <span>Unity</span>
-                <span>Unreal Engine 5</span>
-                <span>Godot</span>
-            </div>
-            <h4>Other Tools</h4>
-            <div class="tech-stack">
-                <span>Visual Studio Code</span>
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Git Bash</span>
-                <span>GitLab</span>
-                <span>Jira</span>
-                <span>Trello</span>
-                <span>Codecks</span>
-            </div>
-            <h4>Concepts</h4>
-            <div class="tech-stack">
-                <span>Level Design</span>
-                <span>Narrative Design</span>
-                <span>Merge Conflict Resolution</span>
-                <span>Debugging</span>
-                <span>OOP</span>
-                <span>Data Structures</span>
-                <span>Algorithms</span>
-                <span>REST APIs</span>
-                <span>UI/UX Design</span>
-                <span>Agile Development</span>
-                <span>Version Control</span>
-            </div>
-            <h4>Spoken Languages</h4>
-            <div class="tech-stack">
-                <span>English</span>
-                <span>Korean</span>
-                <span>Spanish</span>
-            </div>
+            <a href="./assets/GiaHur_Resume.pdf" class="button" target="_blank"><i class="fa-regular fa-file-lines"></i>
+                Resume</a>
         </div>
     </div>
+
+    <div class="container">
+        <div id="projects">
+            <h2>Projects</h2>
+        </div>
+        <h3>Gameplay Programming</h3>
+        <div class="projects-grid">
+            <a href="./projects/interlinked" class="project-card">
+                <div class="img-container">
+                    <img src="./assets/IL/IL_Cover.webp">
+                    <img class="replace-img" src="../assets/IL/IL_LifeDash.webp" title="Interlinked Clip">
+                </div>
+                <div class="project-info">
+                    <h3>Interlinked</h3>
+                    <p>3-D first-person action game</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Gameplay, AI Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>13 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>4 months</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Unreal Engine 5</span>
+                        <span>Blueprints</span>
+                        <span>C++</span>
+                        <span>Gameplay Ability System</span>
+                    </div>
+                </div>
+            </a>
+            <a href="./projects/restoringhope" class="project-card">
+                <div class="img-container">
+                    <img src="./assets/RH/RH_Diary.webp">
+                    <img class="replace-img" src="./assets/RH/RH_Collectible.webp" title="Picking up a collectible">
+                </div>
+                <div class="project-info">
+                    <h3>Restoring Hope</h3>
+                    <p>2-D narrative-driven pixel puzzle game</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Puzzle Lead, Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>9 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>3 months</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Unity</span>
+                        <span>C#</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./projects/pizzasaucer" class="project-card">
+                <div class="img-container">
+                    <img src="./assets/PS/PS_Title.webp">
+                    <img class="replace-img" src="../assets/PS/PS_Clue.webp"
+                        title="Player receiving clues that auto-populate the map.">
+                </div>
+                <div class="project-info">
+                    <h3>Pizza Saucer</h3>
+                    <p>2-D pizza-making simulator game</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Producer, Gameplay, UI Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>5 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>3 months</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Unity</span>
+                        <span>C#</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <h3>UI Programming</h3>
+        <div class="projects-grid">
+            <a href="./projects/configura" class="project-card">
+                <div class="img-container">
+                    <img src="./assets/CF/CF_Thumbnail.webp">
+                    <img class="replace-img" src="./assets/CF/CF_Characters.webp" title="Randomizing characters">
+                </div>
+                <div class="project-info">
+                    <h3>Configura</h3>
+                    <p>Character creator creation plugin</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>UI, Tools Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>4 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>7 months</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Godot</span>
+                        <span>GDScript</span>
+                    </div>
+                </div>
+            </a>
+            <!--
+          <a href="./projects/letsgogambling" class="project-card">
+                <img src="./assets/RH/RH_Diary.webp">
+                <div class="project-info">
+                    <h3>Let's Go Gambling!</h3>
+                    <p>2-D casino simulator</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>UI Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>5 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>1 month</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Godot</span>
+                        <span>C#</span>
+                        <span>GDScript</span>
+                    </div>
+                </div>
+            </a>
+            <a href="./projects/ohfthecake" class="project-card">
+                <img src="./assets/RH/RH_Diary.webp">
+                <div class="project-info">
+                    <h3>Oh F*#@! The Cake!</h3>
+                    <p>3-D co-op silly jam game</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>UI Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>5 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>48 hours</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Godot</span>
+                        <span>C#</span>
+                        <span>GDScript</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./projects/whenisgreat" class="project-card">
+                <img src="./assets/WIG/WIG_Welcome.webp">
+                <img class="replace-img" src="./assets/WIG/WIG_Animated.webp" title="Welcome, Home, Calendar, and Delete pages">
+                <div class="project-info">
+                    <h3>WhenIsGreat</h3>
+                    <p>Scheduling browser application with Google Calendar integration</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Frontend, UI Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>4 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>3 months</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                        <span>Java</span>
+                        <span>CSS</span>
+                        <span>HTML</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./projects/couchmeetstable" class="project-card">
+                <img src="./assets/CMT/CMT_Matches.webp">
+                <div class="project-info">
+                    <h3>Couch Meets Table</h3>
+                    <p>Roommate-matching browser application</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Frontend Lead, UI Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>4 people</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>3 months</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Django</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./projects/ultimate" class="project-card">
+                <img src="./assets/UT/UT_BigWin.webp">
+                <div class="project-info">
+                    <h3>Ultimate</h3>
+                    <p>Browser application to play Ultimate Tic-Tac-Toe</p>
+
+                    <div class="project-details">
+                        <div>
+                            <span>Role:</span>
+                            <strong>Solo Developer</strong>
+                        </div>
+                        <div>
+                            <span>Team Size:</span>
+                            <strong>1 person</strong>
+                        </div>
+                        <div>
+                            <span>Duration:</span>
+                            <strong>2 weeks</strong>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                        <span>TypeScript</span>
+                        <span>HTML</span>
+                    </div>
+                </div>
+            </a>
+            -->
+        </div>
+
+        <span id="more">
+            <h3>Design</h3>
+            <div class="projects-grid">
+                <a href="./projects/ursamagus" class="project-card">
+                    <div class="img-container">
+                        <img src="./assets/UM/UM_Thumbnail.webp">
+                        <img class="replace-img" src="./assets/UM/UM_Preview.webp">
+                    </div>
+                    <div class="project-info">
+                        <h3>Ursa Magus</h3>
+                        <p>Turn-based stealth puzzle prototype</p>
+
+                        <div class="project-details">
+                            <div>
+                                <span>Role:</span>
+                                <strong>Level Designer, Gameplay Developer</strong>
+                            </div>
+                            <div>
+                                <span>Team Size:</span>
+                                <strong>5 people</strong>
+                            </div>
+                            <div>
+                                <span>Duration:</span>
+                                <strong>4 weeks</strong>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Unity</span>
+                            <span>C#</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./projects/stargazing" class="project-card">
+                    <div class="img-container">
+                        <img src="./assets/SG/SG_Home.webp">
+                        <img class="replace-img" src="./assets/SG/SG_Preview.webp">
+                    </div>
+                    <div class="project-info">
+                        <h3>Stargazing</h3>
+                        <p>2-D narrative prototype about coming out</p>
+
+                        <div class="project-details">
+                            <div>
+                                <span>Role:</span>
+                                <strong>Narrative Designer</strong>
+                            </div>
+                            <div>
+                                <span>Team Size:</span>
+                                <strong>5 people</strong>
+                            </div>
+                            <div>
+                                <span>Duration:</span>
+                                <strong>3 weeks</strong>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Godot</span>
+                            <span>C#</span>
+                            <span>GDScript</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </span>
+        <div class="center">
+            <button id="moreBtn" class="button">See more</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="contact">
+            <h2>Contact Me</h2>
+        </div>
+        <h3>Thanks for checking out my website! If you want to contact me, feel free to reach out.</h3>
+        <div class="center">
+            <a href="https://www.linkedin.com/in/giahur/" class="button contact" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i> linkedin.com/in/giahur/</a>
+            <a href="https://github.com/giahur" class="button contact" target="_blank"><i
+                    class="fa-brands fa-github"></i> github.com/giahur</a>
+            <a href="mailto:giahur25@gmail.com" class="button contact" target="_blank"><i
+                    class="fa-regular fa-envelope"></i> giahur25@gmail.com</a>
+            <a href="https://giahur.itch.io/" class="button contact" target="_blank"><i
+                    class="fa-brands fa-itch-io"></i> giahur.itch.io</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="about_me">
+            <h2>About Me</h2>
+        </div>
+        <h3>I am a Master's student at Rochester Institute of Technology studying Game Design and Development. I
+            received my Bachelor's in Computer Science at Case Western Reserve University with minors in Computer
+            Gaming, Spanish, and Mandarin Chinese. I have a strong foundation in web development.</h3>
+    </div>
+
+    <script src="../js/allprojects.js"></script>
     <script src="../js/nav.js"></script>
 </body>
+
+</html>
