@@ -128,7 +128,9 @@
     justify-content: center;
     align-items: center;
 }
-
+#show {
+    display: none;
+}
 /* == SMALL DEVICE RESPONSIVE == */
 @media (max-width: 1030px) {
     .projects-grid {
