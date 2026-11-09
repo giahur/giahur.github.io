@@ -131,6 +131,11 @@
 #show {
     display: none;
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
 /* == SMALL DEVICE RESPONSIVE == */
 @media (max-width: 1030px) {
     .projects-grid {

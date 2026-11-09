@@ -3,9 +3,9 @@
 
 <head>
     <title>about me</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="./css/allprojects.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/allprojects.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -17,7 +17,7 @@
                     title="Made by my friend Katelyn Park @katpar.art"></a>
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul>
-                <li><a href="/" class="active">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about_me">About Me</a></li>
                 <li><a href="#contact">Contact Me</a></li>
@@ -41,7 +41,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container" id="home">
         <h2 class="black">Hello! My name is</h2>
         <h1>Gia Hur</h1>
         <h2 class="black">and I'm a Gameplay and UI Programmer.</h2>
@@ -52,7 +52,7 @@
                 Show Resume</button>
             <span id="show">
                 <iframe 
-                    src="./assets/GiaHur_Resume.pdf" 
+                    src="/assets/GiaHur_Resume.pdf" 
                     width="100%" 
                     height="600px" 
                     style="border: none; overflow: auto;" 
@@ -62,16 +62,14 @@
         </div>
     </div>
 
-    <div class="container">
-        <div id="projects">
-            <h2>Projects</h2>
-        </div>
+    <div class="container" id="projects">
+        <h2>Projects</h2>
         <h3>Gameplay Programming</h3>
         <div class="projects-grid">
-            <a href="./projects/interlinked" class="project-card">
+            <a href="/projects/interlinked" class="project-card">
                 <div class="img-container">
-                    <img src="./assets/IL/IL_Cover.webp">
-                    <img class="replace-img" src="../assets/IL/IL_LifeDash.webp" title="Interlinked Clip">
+                    <img src="/assets/IL/IL_Cover.webp">
+                    <img class="replace-img" src="/assets/IL/IL_LifeDash.webp" title="Interlinked Clip">
                 </div>
                 <div class="project-info">
                     <h3>Interlinked</h3>
@@ -96,13 +94,14 @@
                         <span>Blueprints</span>
                         <span>C++</span>
                         <span>Gameplay Ability System</span>
+                        <span>Procedural Animation</span>
                     </div>
                 </div>
             </a>
-            <a href="./projects/restoringhope" class="project-card">
+            <a href="/projects/restoringhope" class="project-card">
                 <div class="img-container">
-                    <img src="./assets/RH/RH_Diary.webp">
-                    <img class="replace-img" src="./assets/RH/RH_Collectible.webp" title="Picking up a collectible">
+                    <img src="/assets/RH/RH_Diary.webp">
+                    <img class="replace-img" src="/assets/RH/RH_Collectible.webp" title="Picking up a collectible">
                 </div>
                 <div class="project-info">
                     <h3>Restoring Hope</h3>
@@ -125,14 +124,15 @@
                     <div class="tech-stack">
                         <span>Unity</span>
                         <span>C#</span>
+                        <span>Puzzle Design</span>
                     </div>
                 </div>
             </a>
 
-            <a href="./projects/pizzasaucer" class="project-card">
+            <a href="/projects/pizzasaucer" class="project-card">
                 <div class="img-container">
-                    <img src="./assets/PS/PS_Title.webp">
-                    <img class="replace-img" src="../assets/PS/PS_Clue.webp"
+                    <img src="/assets/PS/PS_Title.webp">
+                    <img class="replace-img" src="/assets/PS/PS_Clue.webp"
                         title="Player receiving clues that auto-populate the map.">
                 </div>
                 <div class="project-info">
@@ -156,6 +156,7 @@
                     <div class="tech-stack">
                         <span>Unity</span>
                         <span>C#</span>
+                        <span>UI Development</span>
                     </div>
                 </div>
             </a>
@@ -163,10 +164,10 @@
 
         <h3>UI Programming</h3>
         <div class="projects-grid">
-            <a href="./projects/configura" class="project-card">
+            <a href="/projects/configura" class="project-card">
                 <div class="img-container">
-                    <img src="./assets/CF/CF_Thumbnail.webp">
-                    <img class="replace-img" src="./assets/CF/CF_Characters.webp" title="Randomizing characters">
+                    <img src="/assets/CF/CF_Thumbnail.webp">
+                    <img class="replace-img" src="/assets/CF/CF_Characters.webp" title="Randomizing characters">
                 </div>
                 <div class="project-info">
                     <h3>Configura</h3>
@@ -189,12 +190,15 @@
                     <div class="tech-stack">
                         <span>Godot</span>
                         <span>GDScript</span>
+                        <span>UI/UX Design</span>
+                        <span>UI/UX Development</span>
+                        <span>Tools Development</span>
                     </div>
                 </div>
             </a>
             <!--
-          <a href="./projects/letsgogambling" class="project-card">
-                <img src="./assets/RH/RH_Diary.webp">
+          <a href="/projects/letsgogambling" class="project-card">
+                <img src="/assets/RH/RH_Diary.webp">
                 <div class="project-info">
                     <h3>Let's Go Gambling!</h3>
                     <p>2-D casino simulator</p>
@@ -220,8 +224,8 @@
                     </div>
                 </div>
             </a>
-            <a href="./projects/ohfthecake" class="project-card">
-                <img src="./assets/RH/RH_Diary.webp">
+            <a href="/projects/ohfthecake" class="project-card">
+                <img src="/assets/RH/RH_Diary.webp">
                 <div class="project-info">
                     <h3>Oh F*#@! The Cake!</h3>
                     <p>3-D co-op silly jam game</p>
@@ -248,9 +252,9 @@
                 </div>
             </a>
 
-            <a href="./projects/whenisgreat" class="project-card">
-                <img src="./assets/WIG/WIG_Welcome.webp">
-                <img class="replace-img" src="./assets/WIG/WIG_Animated.webp" title="Welcome, Home, Calendar, and Delete pages">
+            <a href="/projects/whenisgreat" class="project-card">
+                <img src="/assets/WIG/WIG_Welcome.webp">
+                <img class="replace-img" src="/assets/WIG/WIG_Animated.webp" title="Welcome, Home, Calendar, and Delete pages">
                 <div class="project-info">
                     <h3>WhenIsGreat</h3>
                     <p>Scheduling browser application with Google Calendar integration</p>
@@ -281,8 +285,8 @@
                 </div>
             </a>
 
-            <a href="./projects/couchmeetstable" class="project-card">
-                <img src="./assets/CMT/CMT_Matches.webp">
+            <a href="/projects/couchmeetstable" class="project-card">
+                <img src="/assets/CMT/CMT_Matches.webp">
                 <div class="project-info">
                     <h3>Couch Meets Table</h3>
                     <p>Roommate-matching browser application</p>
@@ -312,8 +316,8 @@
                 </div>
             </a>
 
-            <a href="./projects/ultimate" class="project-card">
-                <img src="./assets/UT/UT_BigWin.webp">
+            <a href="/projects/ultimate" class="project-card">
+                <img src="/assets/UT/UT_BigWin.webp">
                 <div class="project-info">
                     <h3>Ultimate</h3>
                     <p>Browser application to play Ultimate Tic-Tac-Toe</p>
@@ -347,10 +351,10 @@
         <span id="more">
             <h3>Design</h3>
             <div class="projects-grid">
-                <a href="./projects/ursamagus" class="project-card">
+                <a href="/projects/ursamagus" class="project-card">
                     <div class="img-container">
-                        <img src="./assets/UM/UM_Thumbnail.webp">
-                        <img class="replace-img" src="./assets/UM/UM_Preview.webp">
+                        <img src="/assets/UM/UM_Thumbnail.webp">
+                        <img class="replace-img" src="/assets/UM/UM_Preview.webp">
                     </div>
                     <div class="project-info">
                         <h3>Ursa Magus</h3>
@@ -373,14 +377,15 @@
                         <div class="tech-stack">
                             <span>Unity</span>
                             <span>C#</span>
+                            <span>Level Design</span>
                         </div>
                     </div>
                 </a>
 
-                <a href="./projects/stargazing" class="project-card">
+                <a href="/projects/stargazing" class="project-card">
                     <div class="img-container">
-                        <img src="./assets/SG/SG_Home.webp">
-                        <img class="replace-img" src="./assets/SG/SG_Preview.webp">
+                        <img src="/assets/SG/SG_Home.webp">
+                        <img class="replace-img" src="/assets/SG/SG_Preview.webp">
                     </div>
                     <div class="project-info">
                         <h3>Stargazing</h3>
@@ -404,6 +409,7 @@
                             <span>Godot</span>
                             <span>C#</span>
                             <span>GDScript</span>
+                            <span>Narrative Design</span>
                         </div>
                     </div>
                 </a>
@@ -412,37 +418,79 @@
         <div class="center">
             <button id="moreBtn" class="button">See more</button>
         </div>
+
+        <div class="info-card">
+            <h3>Additional Skills</h3>
+            <h4>Programming Languages and Frameworks</h4>
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>Java</span>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>React</span>
+            </div>
+            <h4>Other Tools</h4>
+            <div class="tech-stack">
+                <span>Visual Studio Code</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>GitLab</span>
+                <span>Jira</span>
+                <span>Trello</span>
+                <span>Codecks</span>
+            </div>
+            <h4>Concepts</h4>
+            <div class="tech-stack">
+                <span>Debugging</span>
+                <span>OOP</span>
+                <span>Data Structures</span>
+                <span>Algorithms</span>
+                <span>REST APIs</span>
+                <span>UI/UX Design</span>
+                <span>Agile Development</span>
+            </div>
+            <h4>Spoken Languages</h4>
+            <div class="tech-stack">
+                <span>English</span>
+                <span>Korean</span>
+                <span>Spanish</span>
+            </div>
+        </div>
     </div>
 
-    <div class="container">
-        <div id="about_me">
-            <h2>About Me</h2>
-        </div>
-        <h3>I am a Master's student at Rochester Institute of Technology studying Game Design and Development. I
+    <div class="container" id="about_me">
+        <h2>About Me</h2>
+        <div class="info-card">
+            <p>I am a Master's student at Rochester Institute of Technology studying Game Design and Development. I
             received my Bachelor's in Computer Science at Case Western Reserve University with minors in Computer
             Gaming, Spanish, and Mandarin Chinese. I have a strong foundation in web development, but have branched into
-            gameplay and UI programming. </br>
-            During my free time, I like to dance, especially hip hop (<a
+            gameplay and UI programming. </p>
+            <p>In my free time I like to dance, especially hip hop (<a
                 href="https://www.youtube.com/watch?v=u7RcOH3g6sE" target="_blank">Watch one of my sets here!</a>)
             I also enjoy reading (<a href="https://www.goodreads.com/user/show/124021789-gia-hur" target="_blank">Add me
-                on Goodreads!</a>) and doing crafts.</h3>
+                on Goodreads!</a>) and doing crafts.</p>
+        </div>
+        
     </div>
 
-    <div class="container">
-        <div id="contact">
-            <h2>Contact Me</h2>
+    <div class="container" id="contact">
+        <h2>Contact Me</h2>
+        <div class="info-card">
+            <h3>Thanks for checking out my website! If you want to contact me, feel free to reach out.</h3>
+            <div class="center">
+                <a href="mailto:giahur25@gmail.com" class="button contact" target="_blank"><i
+                        class="fa-solid fa-envelope"></i> giahur25@gmail.com</a>
+                <a href="https://www.linkedin.com/in/giahur/" class="button contact" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i> linkedin.com/in/giahur/</a>
+                <a href="https://github.com/giahur" class="button contact" target="_blank"><i
+                        class="fa-brands fa-github"></i> github.com/giahur</a>
+                <a href="https://giahur.itch.io/" class="button contact" target="_blank"><i
+                        class="fa-brands fa-itch-io"></i> giahur.itch.io</a>
+            </div>
         </div>
-        <h3>Thanks for checking out my website! If you want to contact me, feel free to reach out.</h3>
-        <div class="center">
-            <a href="mailto:giahur25@gmail.com" class="button contact" target="_blank"><i
-                    class="fa-solid fa-envelope"></i> giahur25@gmail.com</a>
-            <a href="https://www.linkedin.com/in/giahur/" class="button contact" target="_blank"><i
-                    class="fa-brands fa-linkedin-in"></i> linkedin.com/in/giahur/</a>
-            <a href="https://github.com/giahur" class="button contact" target="_blank"><i
-                    class="fa-brands fa-github"></i> github.com/giahur</a>
-            <a href="https://giahur.itch.io/" class="button contact" target="_blank"><i
-                    class="fa-brands fa-itch-io"></i> giahur.itch.io</a>
-        </div>
+        
     </br>
     </br>
     </br>
@@ -455,8 +503,8 @@
     </br>
     </div>
 
-    <script src="../js/allprojects.js"></script>
-    <script src="../js/nav.js"></script>
+    <script src="/js/allprojects.js"></script>
+    <script src="/js/nav.js"></script>
 </body>
 
 </html>
