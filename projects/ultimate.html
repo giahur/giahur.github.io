@@ -1,21 +1,22 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>ultimate</title>
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/navbar.css" />
-        <link rel="stylesheet" href="../css/project.css" />
-    </head>
 
-    <body>
-        <header>
+<head>
+    <title>ultimate</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+</head>
+
+<body>
+    <header>
         <nav>
             <a href="/index"><img class="logo" src="/assets/gia.svg"
                     title="Made by my friend Katelyn Park @katpar.art"></a>
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul>
-                <li><a href="/index#home" class="active">Home</a></li>
-                <li><a href="/index#projects">Projects</a></li>
+                <li><a href="/index#home">Home</a></li>
+                <li><a href="/index#projects" class="active">Projects</a></li>
                 <li><a href="/index#about_me">About Me</a></li>
                 <li><a href="/index#contact">Contact Me</a></li>
             </ul>
@@ -39,178 +40,166 @@
         </nav>
     </header>
 
-        <div class="container">
-            <div class="center">
-                <h2>Ultimate</h2>
-                <p>Website to play Ultimate Tic-Tac-Toe with a friend!</p>
-            </div>
+    <div class="container">
+        <div class="center">
+            <h2>Ultimate</h2>
+            <p>Website to play Ultimate Tic-Tac-Toe with a friend!</p>
+        </div>
 
-            <div class="row">
-                <div class="half">
-                    <div class="project-details">
-                        <div>
-                            <span>Role:</span>
-                            <strong>Solo Developer</strong>
-                        </div>
-                        <div>
-                            <span>Team Size:</span>
-                            <strong>1 person</strong>
-                        </div>
-                        <div>
-                            <span>Duration:</span>
-                            <strong>2 weeks</strong>
-                        </div>
+        <div class="row">
+            <div class="half">
+                <div class="project-details">
+                    <div>
+                        <span>Role:</span>
+                        <strong>Solo Developer</strong>
                     </div>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>JavaScript</span>
-                        <span>CSS</span>
-                        <span>TypeScript</span>
-                        <span>HTML</span>
+                    <div>
+                        <span>Team Size:</span>
+                        <strong>1 person</strong>
+                    </div>
+                    <div>
+                        <span>Duration:</span>
+                        <strong>2 weeks</strong>
                     </div>
                 </div>
-                <div class="half">
-                    <p>
-                        A complex version with nine tic-tac-toe boards forming
-                        one giant board! Wins on the smaller boards only count
-                        as moves on the larger board. Win the whole game by
-                        getting 3-in-a-row on the large board!
-                    </p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>CSS</span>
+                    <span>TypeScript</span>
+                    <span>HTML</span>
                 </div>
             </div>
-            <div class="center" style="flex-direction: row">
-                <a
-                    href="https://stackblitz-starters-9qapsx.stackblitz.io/homepage"
-                    class="button"
-                    target="_blank"
-                    ><i class="fa-solid fa-gamepad"></i> Play</a
-                >
-            </div>
-            <div class="center">
-                <img class="main-img" src="" title="" />
-            </div>
-
-            <h3>Responsibilities</h3>
-            <div class="info-card">
-                <p>Developer</p>
-                <ul>
-                    <li>
-                        Designed and implemented a component-based React
-                        architecture.
-                    </li>
-                    <li>
-                        Built complex game logic, including multi-board state
-                        management, move restrictions, and conditional board
-                        activation.
-                    </li>
-                    <li>
-                        Managed shared and local state using React Hooks to
-                        coordinate turns, board activity, and game outcomes.
-                    </li>
-                    <li>
-                        Implemented client-side routing with React Router for
-                        easy navigation.
-                    </li>
-                    <li>
-                        Styled the application with CSS, focusing on visual
-                        feedback for a complete gameplay experience.
-                    </li>
-                </ul>
-            </div>
-
-            <h3>Process</h3>
-            <div class="info-card">
-                <p>Overview</p>
-                <section>
-                    <div class="maj-area right">
-                        <p>
-                            Ultimate is tic-tac-toe with a twist! It takes the
-                            traditional 3x3 board and adds a smaller board in
-                            each square. Then, the two players take turns moving
-                            on the small boards. If you win on a small board,
-                            that counts as a move on the large board. Here's
-                            where it get tricky. Your move is determined by your
-                            opponent's previous move. Whichever square they mark
-                            determines the board you play in. For example,
-                            playing in the top right square on any of the
-                            smaller boards sends your opponent to the top right
-                            square on the larger board. Their move in that
-                            square then determines your next move. The game ends
-                            when a player wins on the large board, or there are
-                            no moves remaining (tie).
-                        </p>
-                    </div>
-                    <div class="min-area left">
-                        <img
-                            src="../assets/UT/UT_Move.webp"
-                            title="Playing in the top-left square on the small board sends your opponent to the top-left on the big board."
-                        />
-                    </div>
-                </section>
-            </div>
-            <div class="info-card">
-                <p>Planning</p>
-                <section>
-                    <div class="maj-area right">
-                        <p>
-                            I began with mapping out the game rules and
-                            mechanics to understand the necessary components and
-                            state management. Each small board would need to
-                            send up the information of where players last moved
-                            to inform the larger board. This meant created a
-                            Javascript class for the small boards that checked
-                            for wins, checked moves, and handled clicks. So, I
-                            built and tested a 3x3 board with standard gameplay
-                            before scaling up to the nine interconnected boards.
-                        </p>
-                    </div>
-                    <div class="min-area left">
-                        <img
-                            src="../assets/UT/UT_SmallWin.webp"
-                            title="Wins on the small board count as moves on the big board."
-                        />
-                    </div>
-                </section>
-            </div>
-            <div class="info-card">
-                <p>Connecting</p>
-                <section>
-                    <div class="min-area right">
-                        <img
-                            src="../assets/UT/UT_Anywhere.webp"
-                            title="If sent to a board that's already been won, you can play anywhere."
-                        />
-                        <img
-                            src="../assets/UT/UT_BigWin.webp"
-                            title="Win three small boards in-a-row to win!"
-                        />
-                    </div>
-                    <div class="maj-area left">
-                        <p>
-                            Once the smaller boards were set up, I could begin
-                            handling the game logic between boards. I first
-                            began with move-direction activation, to dynamically
-                            control which boards were active based on player
-                            moves. An opponent could only play on the board in
-                            the same position as the move of the previous play.
-                            If that board was already won or tied, the opponent
-                            could play on any other available board. This
-                            required careful state management to track the
-                            status of each board. Beyond that, the individual
-                            board logic would handle small board clicks and
-                            wins. Finally, I iteratively tested edge cases,
-                            including full boards, redirected moves, and win
-                            detection. With all of the logic complete, I styled
-                            the application to provide clear visual feedback
-                            such as colored squares to indicate wins/ties of
-                            small boards, active board indications, and a turn
-                            indicator at the top. I also added a home page and a
-                            rules page to explain the game.
-                        </p>
-                    </div>
-                </section>
+            <div class="half">
+                <p>
+                    A complex version with nine tic-tac-toe boards forming
+                    one giant board! Wins on the smaller boards only count
+                    as moves on the larger board. Win the whole game by
+                    getting 3-in-a-row on the large board!
+                </p>
             </div>
         </div>
-        <script src="../js/nav.js"></script>
-    </body>
+        <div class="center" style="flex-direction: row">
+            <a href="https://stackblitz-starters-9qapsx.stackblitz.io/homepage" class="button" target="_blank"><i
+                    class="fa-solid fa-gamepad"></i> Play</a>
+        </div>
+        <div class="center">
+            <img class="main-img" src="" title="" />
+        </div>
+
+        <h3>Responsibilities</h3>
+        <div class="info-card">
+            <p>Developer</p>
+            <ul>
+                <li>
+                    Designed and implemented a component-based React
+                    architecture.
+                </li>
+                <li>
+                    Built complex game logic, including multi-board state
+                    management, move restrictions, and conditional board
+                    activation.
+                </li>
+                <li>
+                    Managed shared and local state using React Hooks to
+                    coordinate turns, board activity, and game outcomes.
+                </li>
+                <li>
+                    Implemented client-side routing with React Router for
+                    easy navigation.
+                </li>
+                <li>
+                    Styled the application with CSS, focusing on visual
+                    feedback for a complete gameplay experience.
+                </li>
+            </ul>
+        </div>
+
+        <h3>Process</h3>
+        <div class="info-card">
+            <p>Overview</p>
+            <section>
+                <div class="maj-area right">
+                    <p>
+                        Ultimate is tic-tac-toe with a twist! It takes the
+                        traditional 3x3 board and adds a smaller board in
+                        each square. Then, the two players take turns moving
+                        on the small boards. If you win on a small board,
+                        that counts as a move on the large board. Here's
+                        where it get tricky. Your move is determined by your
+                        opponent's previous move. Whichever square they mark
+                        determines the board you play in. For example,
+                        playing in the top right square on any of the
+                        smaller boards sends your opponent to the top right
+                        square on the larger board. Their move in that
+                        square then determines your next move. The game ends
+                        when a player wins on the large board, or there are
+                        no moves remaining (tie).
+                    </p>
+                </div>
+                <div class="min-area left">
+                    <img src="../assets/UT/UT_Move.webp"
+                        title="Playing in the top-left square on the small board sends your opponent to the top-left on the big board." />
+                </div>
+            </section>
+        </div>
+        <div class="info-card">
+            <p>Planning</p>
+            <section>
+                <div class="maj-area right">
+                    <p>
+                        I began with mapping out the game rules and
+                        mechanics to understand the necessary components and
+                        state management. Each small board would need to
+                        send up the information of where players last moved
+                        to inform the larger board. This meant created a
+                        Javascript class for the small boards that checked
+                        for wins, checked moves, and handled clicks. So, I
+                        built and tested a 3x3 board with standard gameplay
+                        before scaling up to the nine interconnected boards.
+                    </p>
+                </div>
+                <div class="min-area left">
+                    <img src="../assets/UT/UT_SmallWin.webp"
+                        title="Wins on the small board count as moves on the big board." />
+                </div>
+            </section>
+        </div>
+        <div class="info-card">
+            <p>Connecting</p>
+            <section>
+                <div class="min-area right">
+                    <img src="../assets/UT/UT_Anywhere.webp"
+                        title="If sent to a board that's already been won, you can play anywhere." />
+                    <img src="../assets/UT/UT_BigWin.webp" title="Win three small boards in-a-row to win!" />
+                </div>
+                <div class="maj-area left">
+                    <p>
+                        Once the smaller boards were set up, I could begin
+                        handling the game logic between boards. I first
+                        began with move-direction activation, to dynamically
+                        control which boards were active based on player
+                        moves. An opponent could only play on the board in
+                        the same position as the move of the previous play.
+                        If that board was already won or tied, the opponent
+                        could play on any other available board. This
+                        required careful state management to track the
+                        status of each board. Beyond that, the individual
+                        board logic would handle small board clicks and
+                        wins. Finally, I iteratively tested edge cases,
+                        including full boards, redirected moves, and win
+                        detection. With all of the logic complete, I styled
+                        the application to provide clear visual feedback
+                        such as colored squares to indicate wins/ties of
+                        small boards, active board indications, and a turn
+                        indicator at the top. I also added a home page and a
+                        rules page to explain the game.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../js/nav.js"></script>
+</body>
+
 </html>
