@@ -132,11 +132,6 @@
     display: none;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-    padding: 5rem 0;
-}
 /* == SMALL DEVICE RESPONSIVE == */
 @media (max-width: 1030px) {
     .projects-grid {

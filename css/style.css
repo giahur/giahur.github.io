@@ -13,6 +13,11 @@
 }
 
 /* == TEXT == */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    padding: 5rem 0;
+}
 body {
     font-family: 'Karla', serif;
     background-color: var(--bg-white);
