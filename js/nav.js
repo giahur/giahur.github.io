@@ -28,19 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     sections.forEach((section) => observer.observe(section));
-
-    let input = document.querySelector('#test');
-    let list = document.querySelector('#list');
-
-    input.addEventListener('active', (e) => {
-        input.hide();
-        toggleList();
-    })
-    input.addEventListener('blur', (e) => {
-        toggleList();
-    })
-
-    function toggleList() {
-        list.classList.toggle('list')
-    }
 });
