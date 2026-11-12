@@ -81,6 +81,55 @@ nav .icons {
     display: none;
 }
 
+.list {
+    display: none;
+}
+
+.show-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0%;
+}
+
+.dropdown ul {
+    gap: 0;
+    margin: 0;
+}
+
+.dropdown.info-card {
+    background: color-mix(in srgb, var(--primary-color) 70%, transparent);
+    margin: 0; 
+    padding: 0.5rem;
+}
+
+.dropdown ul li a {
+    font-size: 1.3rem;
+    padding: 0.4rem 0.8rem;
+    white-space: nowrap;
+}
+
+.dropdown ul li a:hover
+{
+    background-color: color-mix(in srgb, var(--primary-color) 70%, var(--accent-color));
+    border-radius: 1rem;
+    transition: background-color 0.3s;
+}
+
+.dropdown ul li a.active {
+    background-color: var(--accent-color);
+    border-radius: 1rem;
+    color: var(--bg-white);
+}
+
+.show-dropdown:hover .dropdown {
+    display: block;
+}
+
 /* == SMALL DEVICE RESPONSIVE == */
 @media (max-width: 1030px) {
     .logo {
