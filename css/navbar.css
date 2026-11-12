@@ -81,6 +81,10 @@ nav .icons {
     display: none;
 }
 
+.list {
+    display: none;
+}
+
 /* == SMALL DEVICE RESPONSIVE == */
 @media (max-width: 1030px) {
     .logo {
