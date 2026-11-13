@@ -1,3 +1,5 @@
+/* == GENERAL STYLES == */
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Mansalva&family=Zeyada&display=swap');
 
@@ -12,12 +14,13 @@
   --text-color: #353342;
 }
 
-/* == TEXT == */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
     padding: 5rem 0;
 }
+
+/* == TEXT == */
 body {
     font-family: 'Karla', serif;
     background-color: var(--bg-white);
@@ -75,6 +78,14 @@ p, li {
     padding: 1rem;
     margin: 1rem;
 }
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* == PROJECT BUTTONS == */
 .button {
     border: none;
